@@ -1,0 +1,41 @@
+Device Changelog
+- Build SELinux status is now Enforcing
+- Fixed most of the SEpolicy denials (more to fix :P)
+- Updated blobs and configs
+- Moved to Coral FP from Walleye
+- WiFi improvements
+- Nuked Snap and added GcamGo as default camera
+- Moved to Stock CarrierConfig
+- Disbaled Vendor mismatch warning
+- Added KharaMe Parts v2
+- Use Pixel charger animation
+- Allow all apps to use smart replies
+- Lots of cleanups. fixes and enhancements!
+
+ROM Changelog
+- Bumped up version to 1.9
+- Added list animations and interpolator
+- QS drag handle improvements
+- Added Default lockscreen clock font and text size options
+- Added QS panel visualizer
+- Added RGB Accent picker
+- Added volume panel styles
+- Added option to centre R type notification header
+- Added brightness slider in QQS
+- Allowed navbar to work with hw keys
+- Added screen off animations
+- Added new FOD animations
+- Added new settings home page
+- Added support for MiSound FX
+- Added nav bar styles
+- Added header images
+- Added new volte icon(by @im_monarK)
+- Added brightness bar styles
+- Added option to hide device parts
+- Improve media seekbar
+- Added option to allow home button wake
+- Make unlocking faster via biometric lock
+- Improvements to touch response
+- Decrease Battery drain
+- Many other fixes and improvements
+
