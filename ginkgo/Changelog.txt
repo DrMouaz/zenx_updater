@@ -1,934 +1,703 @@
 =======================
-     08-09-2020
+     09-15-2020
+=======================
+
+
+   * device/xiaomi/trinket-common
+cf4d571 trinket-common: Disable config_cleanupUnusedFingerprints
+
+=======================
+     09-14-2020
+=======================
+
+
+=======================
+     09-13-2020
 =======================
 
 
    * device/xiaomi/ginkgo
-421d32e ginkgo: Address new battery health nodes
+3aece46 ginkgo: overlay: Add overlay for device parts in zen hub
+09c8174 ginkgo: parts: Remove xiaomi parts from settings
+36cd534 ginkgo: Adapt to ZenX-OS
 
-   * frameworks/base
-93810b69511 SystemUI: Fix cutted Notification icons on dual statusbar mod
-ccb85e3bc4e base: Introduce UI Style Picker [1/3]
-6d294b21e93 overlay: Improve DerpClear Theme
-f40fcc65b18 SystemUI: Add OOS 10 VoLTE icon [1/2]
-2ead4afaf89 SystemUI: Start ZenHub on longpress on SettingsIcon in QS
-67fb2e46ddc SystemUI: Fix Drag and settings icon overlap
-4ed48f54328 overlay: Add Derp Clear Primary and Oneplus Dark
-332eae3b925 SystemUI: Custom Statusbar height [1/2]
-
-   * hardware/qcom-caf/sm8250/display
-4ab176b0e Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT
-
-   * kernel/xiaomi/ginkgo
-d98ef13f279a drm/msm: Drop KCAL RGB limit on tianma
-a954ade58528 Revert "drivers: touchscreen: Change DT2W keycode to 750"
-
-   * packages/apps/ZenHub
-3ad9f85 ZenHub: Introduce UI Style Picker [2/3]
-
-   * vendor/zenx
-0a6a13ea vendor: ZenX-OS v1.8
-146469fb vendor: Introduce UI Style Picker [2/3]
-
-=======================
-     08-08-2020
-=======================
-
-
-   * frameworks/base
-f1e4e67b451 Merge pull request #7 from Raaj52/vooc
-fb4803c1e77 BatteryService: Add VOOC charging support
-
-   * packages/apps/ZenHub
-3317a8b ZenHub: Enable all VoLTE we have
-bcfba21 ZenHub: Custom Statusbar height [2/2]
-
-=======================
-     08-07-2020
-=======================
-
-
-=======================
-     08-06-2020
-=======================
-
+   * device/xiaomi/trinket-common
+a7ae0e6 trinket-common: init: allow sysfs_battery_supply for smart charging
+79572fd trinket-common: overlay: Add overlay for smart charging
+0142402 trinket-common: sepolicy: Address sepolicy denial for battery health
+10ed27f trinket-common: overlay: Add overlay for battery health
+2cbfcf1 trinket-common: sepolicy: Address sepolicy denial for system info
+95e9f99 trinket-common: overlay: Add overlay for system info
+42769d0 trinket-common: Build live display
+78e0f94 trinket-common: Adapt to ZenX-OS
 
    * kernel/xiaomi/ginkgo
-339dd97ed7f8 techpack/data: Merge tag 'LA.UM.8.1.r1-15600-sm8150.0' into quartz
-af61c9549bc5 techpack/audio: Merge tag 'LA.UM.8.1.r1-15600-sm8150.0' into quartz
-53fae11d16fa fw-api: Merge tag 'LA.UM.8.1.r1-15600-sm8150.0' into quartz
-018ab789b132 qca-wifi-host-cmn: Merge tag 'LA.UM.8.1.r1-15600-sm8150.0' into quartz
-756d31fa8cef qcacld-3.0: Merge tag 'LA.UM.8.1.r1-15600-sm8150.0' into quartz
-9d9a59edb21c Merge tag 'LA.UM.8.1.r1-15600-sm8150.0' into quartz
-330a6274678a Merge tag 'v4.14.192' into quartz
-ca4f2c56d416 Linux 4.14.192
-ba6e4d6a92c9 x86/i8259: Use printk_deferred() to prevent deadlock
-ba53d9deccba KVM: LAPIC: Prevent setting the tscdeadline timer if the lapic is hw disabled
-d1245833e0d7 xen-netfront: fix potential deadlock in xennet_remove()
-11e2db546c1b cxgb4: add missing release on skb in uld_send()
-cc5324cc0cae x86/unwind/orc: Fix ORC for newly forked tasks
-24bc07356c49 Revert "i2c: cadence: Fix the hold bit setting"
-850a971a4e29 net: ethernet: ravb: exit if re-initialization fails in tx timeout
-9e3f4267f73e parisc: add support for cmpxchg on u8 pointers
-b10dc328b3c7 nfc: s3fwrn5: add missing release on skb in s3fwrn5_recv_frame
-5727ef24ba9d qed: Disable "MFW indication via attention" SPAM every 5 minutes
-9358267414ca usb: hso: Fix debug compile warning on sparc32
-565089445b39 arm64: csum: Fix handling of bad packets
-a15a67e3eb42 arm64/alternatives: move length validation inside the subsection
-b0cf0beeb661 mac80211: mesh: Free pending skb when destroying a mpath
-86e7d4cd2ed5 mac80211: mesh: Free ie data when leaving mesh
-e1aa01195b82 bpf: Fix map leak in HASH_OF_MAPS map
-8091ddc0695e ibmvnic: Fix IRQ mapping disposal in error path
-2d32ef087f4e mlxsw: core: Free EMAD transactions using kfree_rcu()
-6e0fdf004d85 mlxsw: core: Increase scope of RCU read-side critical section
-a4bdf2cd63b5 mlx4: disable device on shutdown
-3c00fe927003 net: lan78xx: fix transfer-buffer memory leak
-399cb287e12d net: lan78xx: add missing endpoint sanity check
-0269709542e2 sh: Fix validation of system call number
-f8b892f4ecf5 selftests/net: rxtimestamp: fix clang issues for target arch PowerPC
-f2bfdab9ae92 net/x25: Fix null-ptr-deref in x25_disconnect
-f0b6ce595c39 net/x25: Fix x25_neigh refcnt leak when x25 disconnect
-880e98b1abec xfs: fix missed wakeup on l_flush_wait
-4b49b16999d4 rds: Prevent kernel-infoleak in rds_notify_queue_get()
-88f3814ffed5 x86, vmlinux.lds: Page-align end of ..page_aligned sections
-53993bba307d x86/build/lto: Fix truncated .bss with -fdata-sections
-019221c5e515 9p/trans_fd: Fix concurrency del of req_list in p9_fd_cancelled/p9_read_work
-d1f7217b7a75 9p/trans_fd: abort p9_read_work if req status changed
-6a27f426266a f2fs: check if file namelen exceeds max value
-bc08d46f010c f2fs: check memory boundary by insane namelen
-00cf08b009e5 drm: hold gem reference until object is no longer accessed
-2fda665f0a26 drm/amdgpu: Prevent kernel-infoleak in amdgpu_info_ioctl()
-46ee09819f35 ARM: 8986/1: hw_breakpoint: Don't invoke overflow handler on uaccess watchpoints
-f4169c4e91eb wireless: Use offsetof instead of custom macro.
-99c0a2671044 PCI/ASPM: Disable ASPM on ASMedia ASM1083/1085 PCIe-to-PCI bridge
-fd4a641bb573 x86/kvm: Be careful not to clear KVM_VCPU_FLUSH_TLB bit
-83c212df7794 ath9k: release allocated buffer if timed out
-5502de13f91d ath9k_htc: release allocated buffer if timed out
-8d75cc141d70 iio: imu: adis16400: fix memory leak
-12273ec840cc media: rc: prevent memory leak in cx23888_ir_probe
-a42f149865da crypto: ccp - Release all allocated memory if sha type is invalid
-9e06953ee2a4 net: phy: mdio-bcm-unimac: fix potential NULL dereference in unimac_mdio_probe()
-3a156abd2434 scsi: libsas: direct call probe and destruct
-
-=======================
-     08-05-2020
-=======================
-
-
-   * build/make
-bb9b14c85 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/build into HEAD
-
-   * device/xiaomi/ginkgo
-271d2a2 Revert "ginkgo: set SELINUX_IGNORE_NEVERALLOWS"
-b37da21 ginkgo: Enable BatteryHealth preference in Power Setting
-
-   * frameworks/av
-62f3e94e1 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/frameworks/av into HEAD
-
-   * frameworks/base
-e08b9ccbacd Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/frameworks/base into HEAD
-
-   * hardware/qcom-caf/sm8150/display
-36934cd gralloc: Fix RAW for trinket
-
-   * kernel/xiaomi/ginkgo
-ab3edac6280b arm64/dts: trinket: Enable freq-energy-model
-2e68a3f8493e tty: Import correct header for sched priority
-0c1b0f684ceb tty: Migrate to kthread_*_work function names
-11b8edee3b51 tty:  check before stopping kthread
-01dcb7009d47 tty: add tty_port_set_policy function
-7e22a14e323d tty: move tty_port workqueue to be a kthread
-9fc31c089847 PM / Sleep: Expedite garbage collection if idle
-7638eccf3155 PM / Sleep: Start killing wakelocks after one minute of idle
-c3d745a730d1 Makefile: Use pipes rather than temporary files for intermediate steps
-1277a1e0ada1 teckpack: codecs: Use scnprintf() for robustness
-a9892b473bc4 usb/phy/otg-wakelock: Reduce the wakelock timeout to 1 second
-08ae70b17583 printk: filter out some more charging related logspam
-6e6e8e926ed7 selinux: just shut up
-ff200591ce25 msm: vidc: disable debug logs
-e5e7dde2bddd kernel/power: faster deepsleep
-10924ab7f8dd irq: spurious: Disable IRQ debugging by default
-358ca5c823d2 arm64/dts: trinket: Suppress verbose output during boot
-a6dd6ae236af arm64: debug: Disable JTAG debugging by default
-6a5acfa1c9af drivers: power: add timeouts to wakelocks
-606ebbc36aa3 nfc: nq-nci: shut up
-6932fbfbc24d i2c: qcom-geni: silence debugging
-1283039a215a lockref: Limit number of cmpxchg loop retries
-72e8bb84aef4 lib: Disable DEBUG_BUGVERBOSE
-f10caddcb926 mailbox: Silence spammy logger
-525b4d11aaa1 power: Silence egregious charging loggers
-8cdb4b663249 diagfwd_cntl: silence some more debug
-4f732b7db330 msm: gsi: Silence remaining loggers
-3654a1400c11 diag: disable some logging
-d1121a6e3dc8 cnss2: Omit debug logging code
-8c2679401ce2 lib: Disable debug_locks
-
-   * manifest
-8af4c19 Revert "Revert "Track android_vendor_oplauncher""
-2eff3c3 Merge pull request #2 from Lokesh773/ten
-74a4c05 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/manifest into HEAD
-
-   * packages/apps/Settings
-ce9ef10821 BatteryHealth: Add seperated Category
-ee7ed07fb1 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
-
-   * packages/services/Telephony
-8a0411c83 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
-
-   * system/sepolicy
-ad6de2fe Uncrypt: Allow uncrypt to write on ota_package_file.
-676e3594 Export missing audio volume properties
-fde2b64d Ignore the denial when system_other is erased
-a9374362 Don't require seinfo for priv-apps
-b154e70f Allow reading dt fstab in boot control HAL.
-99e5f7a5 Add sepolicy for IBootControl 1.0 and the default HAL.
-fb2dce67 global_macros: trim back various watch* permissions
-ae09c98c update sepolicy for fs notification hooks
-51e419a9 sepolicy: Allow installd to setattr media data
-1934d360 HACK: allow system apps to modify system props
-
-   * vendor/zenx
-096b978a vendor: Add OP launcher optionaly
-
-=======================
-     08-04-2020
-=======================
-
-
-   * device/xiaomi/ginkgo
-30a81dd ginkgo: Update to Coral's August fingerprint
-5d3b0c3 ginkgo: Switch to LLVM tools for kernel build
-
-   * frameworks/base
-34b6dd8a1f2 Clock Style: Add lockscreen Fire circle animation clock
-f38a0ae416b Clock Style : Add lockscreen Rainbow circle animation clock
-e7a35bd41b4 Clock Style : Add lockscreen Bubbles animation clock
-8772f704e0d Clock Style : Add lockscreen Loading animation clock
-eb81c3feb60 Clock Style : Add lockscreen Swing animation clock
-c103511f824 Add a Tux clock controller
-
-   * kernel/xiaomi/ginkgo
-a998f2f8034d arm64: dts: pm6125: Switch to software debouncing for pon keys
-6678c2ca4132 input: qpnp-power-on: Separate software debounce delay from hardware
-ac0ead61f291 input: qpnp-power-on: Adapt software debounce to work for all keys
-845aeb6fd9d1 ANDROID: Disable wq fp check in CFI builds
-5daf0d6389fc ANDROID: Add INIT_STACK_ALL to the list of Clang-specific options
-78304b6dc420 ANDROID: kallsyms: strip hashes from function names with ThinLTO
-7232c6e55e4b ANDROID: kbuild: disable clang-specific configs with other compilers
-89c908dd354e FROMLIST: arm64: kernel: avoid x18 in __cpu_soft_restart
-16f7ca4601f8 FROMLIST: arm64: kvm: stop treating register x18 as caller save
-a9a8fc9026ca FROMLIST: arm64/lib: copy_page: avoid x18 register in assembler code
-81b6f93da393 FROMLIST: arm64: mm: avoid x18 in idmap_kpti_install_ng_mappings
-c319bded2426 ANDROID: arm64: add __nocfi to __apply_alternatives
-b1e5eba6e1cf ANDROID: arm64: add __pa_function
-c4c80536a02a ANDROID: irqchip/gic-v3: rename gic_of_init to work around a ThinLTO+CFI bug
-a8ee460177e4 ANDROID: init: ensure initcall ordering with LTO
-42e6fb6d1cc5 Revert "ANDROID: HACK: init: ensure initcall ordering with LTO"
-69f6f739f7d7 UPSTREAM: netfilter: xt_IDLETIMER: fix sysfs callback function type
-985aa2bc0400 ANDROID: arm64: bpf: implement arch_bpf_jit_check_func
-e4a3d78208c6 kbuild: Hide CFI shadow option if modules are disabled
-1277ba04c208 ANDROID: Log which device failed to suspend in dpm_suspend_start()
-df45b2797ad6 arm64/alternatives: move length validation inside the subsection
-9551b764f781 scripts: Disable some noisy dtc warnings
-363b87acaa1e f2fs: set ioprio of GC kthread to idle
-c479cd7899e6 sched/tune: Hard-code top-app's stune boost to 1
-d4ad899f194f ANDROID: increase limit on sched-tune boost groups
-82d58e0b50ac sched/tune: fix CAF's fuckup that didn't allow negative boosts
-f8066284e415 sched/core: Optimize sched_feat() for !CONFIG_SCHED_DEBUG builds
-b046acfc8bf5 sched/energy: Check out to Android 4.14 common kernel
-57d6c63a5e98 sched: core: silence no longer affine to cpu logspam
-7b66233827fa treewide: Fix few compilation warnings with debugfs disabled
-571abe561843 kbuild: Set --lto-O3 LLD linker flag when building with clang LTO
-0865404c9914 ARM64/configs: ginkgo: Disable unused ERRATUM
-fa641c202218 ion: Improve ION allocation paths
-f02f516a2647 ARM: dts: trinket: Disable expedited RCU grace periods
-a230828fe220 drm: msm: sde: Boost CPU when a new frame is ready to be committed
-db2bbb81a48d kernel: Boost whenever a zygote-forked process becomes a top app
-3fe2325d179a devfreq: Bring back devfreq input boost
-57be577ad507 cpufreq: Bring back CPU input boost
-fe4b47f5d530 ARM64/dts: trinket: Allocate memory region for pstore
-9af1df1cb7cb ARM64/configs: ginkgo: Regen defconfig
-
-   * manifest
-458a841 Manifest for Android 10.0.0 Release 41 (QQ3A.200805.001)
-
-   * packages/apps/Settings
-7a0be91780 BatteryHealth: Make it optional
-2bbe478fa1 BatteryHealth: show Charge Cycles Completed
-b54d87029d BatteryHealth: make resources overlayable
-514760c242 Settings: Add BatteryHealth section
-
-=======================
-     08-03-2020
-=======================
-
-
-   * device/xiaomi/ginkgo
-03bb5b1 Revert "ginkgo: Introduce 'SafailNet'"
-e6c4b84 ginkgo: Fix dual row status bar height in landscape
-ef8b927 ginkgo: wifi: Disable logging
-8273da9 ginkgo: wifi: Enable QPower and Deep sleep at the same time
-f06e3a1 ginkgo: wifi: Relax WiFi re-association RSSI thresholds
-73c613e ginkgo: wifi: Enable DFS channel scanning in P2P search
-bdd5c88 ginkgo: Boost audio output
-6485be2 ginkgo: Introduce 'SafailNet'
-7753a36 ginkgo: Fix dual row status bar height in landscape
-9c90ec5 Revert "ginkgo: Set screen density to 440"
-088e345 ginkgo: ZenX-OS Official
-cf00d13 ginkgo: Update blobs from MIUI 20.7.30
-a4b1f8f ginkgo: Update graphics blobs from LA.UM.8.11.r1-03800
-27587e4 ginkgo: Remove GL comp backpressure prop
-48b7aaf ginkgo: Disable alpha compositing in WM
-b583044 ginkgo: Drop TARGET_USES_DISPLAY_RENDER_INTENTS
-3989386 ginkgo: fstab: Increase zram size to 2GB
-4b1b9a9 ginkgo: Fix dual row status bar height
-1db0741 ginkgo: Address some denial for ZenX-OS
-806a729 ginkgo: Fix duplicate device part
-2a25177 ginkgo: Add device part package name for zen hub
-6e08569 ginkgo: Remove LineageOS live display
-1a73dfa ginkgo: set paths for SystemInfo
-dd5a764 ginkgo: set SELINUX_IGNORE_NEVERALLOWS
-5aaf9ae ginkgo: ZenX-OS bringup
-
-   * kernel/xiaomi/ginkgo
-48889fb5ce4a dtc: update warning settings for new bus and node/property name checks
-7d109088d3bd fs: sdfat: Update to version 2.3.0
-f96248f428a3 fs: sdfat: Update to version 2.1.8
-c47ffab729a8 fs: sdfat: Add MODULE_ALIAS_FS for supported filesystems
-eed38a35be44 fs: sdfat: Add config option to register sdFAT for VFAT
-306f2e56e94c fs: sdfat: Add config option to register sdFAT for exFAT
-3b0729c8ad1f fs: sdfat: Update to driver version 2.0.6
-9c7d01217f83 fs: sdfat: Fix compilation without debugging
-ff0d69054afc fs: Import sdFAT driver
-2659441dc847 kernel: Don't allow IRQ affinity masks to have more than one CPU
-84275ae21114 qos: Execute notifier callbacks atomically
-24510e9cf991 qos: Remove remaining instances of disabling IRQs for pm_qos_lock
-aa089eea317f qos: Don't disable interrupts while holding pm_qos_lock
-e783b1742f14 arm64: Use optimized memcmp
-44220b2482ec arm64: lib: memory utilities optimization
-b4969a2b41bd msm: cleanup: struct gsi_mhi_channel_scratch
-bcb7ccb354a5 msm: cleanup: union gsi_evt_scratch
-3272343cceab msm: cleanup: union gsi_wdi_channel_scratch3_reg
-ed59808ea7cf msm: cleanup: union gsi_channel_scratch
-99c74fbb1596 msm: gsi: Fix GSIDBG formatting error
-84364c0e9244 msm_serial_hs: make the Bluetooth tty thread RT
-bcfb6708c1ff Make msm_serial_hs RT to improve Bluetooth performance
-e13194937744 uapi: Define __BITS_PER_LONG based on compiler target
-8439694c8340 pstore: Remove "-0" suffix from console-ramoops
-fb348ca7d2ff ARM64/configs: ginkgo: Switch to RELR relocations
-48746ee04dae BACKPORT: FROMGIT: arm64: Add support for relocating the kernel with RELR relocations
-08e03d8ca55b msm_geni_serial: skip flushing tx upon shutdown
-b4893f5038f9 msm_geni_serial: reduce wakelock timeout from ISR to 100ms
-23618b53cf75 msm_geni_serial: make ioctl always exclusive
-5aaf01b2ff1c smp2p: revert commits that added wakelocking capabilities
-814bb5333f65 ARM64/configs: ginkgo: Switch to fq_codel queue discipline
-7a1f0a433449 fq_codel: do not include <linux/jhash.h>
-c7db2e11029d fq_codel: Kill useless per-flow dropped statistic
-4050236032bf Increase fq_codel count in the bulk dropper
-7d85bcc0ff6e sch_fq_codel: zero q->flows_cnt when fq_codel_init fails
-5c531503b6d4 treewide: kvzalloc() -> kvcalloc()
-231ee38e67c6 mm: Introduce kvcalloc()
-4e30f3a10590 block: core: gotta go fast
-938afab5d09e ipa_v3: Mitigate usleep_range calls
-5580947c0639 alarmtimer: Add ndelay for tight loop
-464fefea0720 alarmtimer: Don't fail on wakeup
-9335dd1abb83 alarmtimer: Relax wakelock
-14d30b820024 msm: kgsl: make stats updation atomic
-bb32e6105ed7 msm: kgsl: fix accounting of memory mapped to userspace
-f4f2e25faf59 msm: kgsl: remove redundant check for usermem type
-48a03a246bce qcacld-3.0: Disable SAE and GCMP by default
-6e46f630454a qcacld-3.0: Do not allow any wakelocks to be held
-8cb28c2eb474 qcacld-3.0: Free a bunch of pkts at once
-fa2220f6f888 sched: bump big core down migration further to 35%
-c0f0c3d7e230 sched: bump big core down migration further to 31%
-3b0defc4b0bb sched: adopt capacity margin 20% from EAS PELT's capacity_margin
-83cb7632579a sched/tune: Increase the cgroup limit to 7
-1f6d6c0dbf09 sched: use rq_clock if WALT is not enabled
-aa64ee6762f0 sched: turn on the TTWU_QUEUE feature
-b57d1f1b4a8c sched: Allow realtime tasks to consume entire sched periods
-dfc72eeaf443 mm: Increase vmstat interval
-5fbf0cc3c014 sched/walt: Avoid walt irq work in offlined cpu
-bf63a82ac328 cpufreq: schedutil: remove tracing
-333323a089cc cpufreq: schedutil: remove tracing from sugov_update_commit
-cd1984485597 cpufreq: schedutil: Fix for limits update with fast switch enabled
-eb99b4d1608e schedutil: revert 3ba6681f7d95a61c28fd78b9f1b103ca994af6ab
-b3f8fef3dc13 cpufreq: Avoid leaving stale IRQ work items during CPU offline
-4ed4581547bf cpufreq: schedutil: Queue sugov irq work on policy online cpu
-c5615fccd8f7 mbcache: Speed up cache entry creation
-4880265e0356 disp: msm: sde: prevent CPU from sleeping while processing display IRQ
-e8b0c666c823 Merge tag 'v4.14.191' into quartz
-
-   * packages/apps/Settings
-ca71beae89 Settings: Change ZenHub summary
-
-   * vendor/xiaomi/ginkgo
-9895d14 ginkgo: Update blobs from Miui 20.7.30
-
-=======================
-     08-02-2020
-=======================
-
-
-   * device/xiaomi/ginkgo
-1a562ef ginkgo: parts: Implement Clear Speaker
-2c7ebb0 ginkgo: parts: Give device settings its own fragment
-73328cb ginkgo: Add back dirac support
-2e38bfb ginkgo: init: Account for willow units with hwversion 19.39.0
-3ef0e00 ginkgo: Dynamically set camera model prop for EXIF data
-7ab5843 ginkgo: Disable HWC virtual displays
-064241b ginkgo: Set screen density to 440
-972da95 ginkgo: overlay: Change corner content padding to 16dp
-74d3283 ginkgo: Havoc-OS bringup
+b874012d07de ARM64/configs: ginkgo: build rmnet extensions inline
+48db52571769 Merge tag 'LA.UM.8.11.r1-04300-NICOBAR.0' into 11.0
 
    * prebuilts/clang/host/linux-x86/clang-12.0
-45c59ca Update to 20200801 build
-
-=======================
-     08-01-2020
-=======================
-
-
-   * kernel/xiaomi/ginkgo
-7f2c5eb458b8 Linux 4.14.191
-8a443ffcf7b5 xfs: set format back to extents if xfs_bmap_extents_to_btree
-1f850ba16f92 regmap: debugfs: check count when read regmap file
-bbacb34b8440 mm/page_owner.c: remove drain_all_pages from init_early_allocated_pages
-e72a42b699ba tcp: allow at most one TLP probe per flight
-b1f58d61380a rtnetlink: Fix memory(net_device) leak when ->newlink fails
-d6b1ffe225b2 ip6_gre: fix null-ptr-deref in ip6gre_init_net()
-c1142de65e8f AX.25: Prevent integer overflows in connect and sendmsg
-88fb6b391369 rxrpc: Fix sendmsg() returning EPIPE due to recvmsg() returning ENODATA
-cc1227c4ad82 net: udp: Fix wrong clean up for IS_UDPLITE macro
-f8607dcce059 net-sysfs: add a newline when printing 'tx_timeout' by sysfs
-237070f593b2 drivers/net/wan/x25_asy: Fix to make it work
-fbcdf3849aa1 dev: Defer free of skbs in flush_backlog
-1411bf6e5910 AX.25: Prevent out-of-bounds read in ax25_sendmsg()
-253c17d93aba AX.25: Fix out-of-bounds read in ax25_connect()
-93ca81a03c5d msm: sps: Assign proper BAM destination values
-
-   * manifest
-6741e7c Add zenx banner
-
-   * packages/apps/ZenHub
-a2962c8 ZenHub: Update maintainers and devices
-
-=======================
-     07-31-2020
-=======================
-
-
-   * hardware/lineage/livedisplay
-ce63fc9 livedisplay: sysfs: Add generic implementation for simple sysfs modes
-b8ca32c livedisplay: sysfs: Modularize all components
-22462db livedisplay: sysfs: Refine interface registration
-8a01e72 livedisplay: sysfs: Miscellaneous clean-ups
-d0580f3 livedisplay: sysfs: Use POSIX api to check file access
-b1a97e0 livedisplay: sysfs: Move string literals to anonymous namespace
-8888a4b livedisplay: sysfs: Follow naming rules of Google C++ Style Guide
-44e1a1f livedisplay: sdm: Modularize all components
-5e27e56 livedisplay: sdm: Fix a mismatched data type
-4afd662 livedisplay: sdm: Miscellaneous clean-ups
-5c154dc livedisplay: sdm: Improve SendDppsCommand
-bb5ff4a livedisplay: sdm: Move constants and helpers to anonymous namespace
-b8a246a livedisplay: sdm: Move SDM feature version check to utils
-39b8735 livedisplay: sdm: Convert Utils class to namespace
-07e4ea4 livedisplay: sdm: Use default member initializers
-143150e livedisplay: sdm: Follow naming rules of Google C++ Style Guide
-9d5a9c9 livedisplay: sdm: Implement a sane callback to update default PA
-a15a1f3 livedisplay: sdm: Restart when any QDCM backend not ready
-7468c41 livedisplay: sdm: Use RAII semantics where possible
-
-   * manifest
-eb99272 readme:Clean up unwanted stuff
-
-=======================
-     07-30-2020
-=======================
-
-
-   * frameworks/base
-a89ed143e51 NetworkTraffic: Fix insivible Icon on light theme
-f89e2e61ff0 Optimize AbsListView to reduce click operation latency
-3426cfe9986 Keyguard: Improve Pin dialog show/hide animations duration
-
-   * kernel/xiaomi/ginkgo
-e5a54aa2d312 Linux 4.14.190
-d560e7b5e990 ath9k: Fix regression with Atheros 9271
-ecb8ccca5631 ath9k: Fix general protection fault in ath9k_hif_usb_rx_cb
-438d96367d03 parisc: Add atomic64_set_release() define to avoid CPU soft lockups
-01f2b73e0da2 io-mapping: indicate mapping failure
-a0c487460ce9 mm/memcg: fix refcount error while moving and swapping
-71749b1181ec Makefile: Fix GCC_TOOLCHAIN_DIR prefix for Clang cross compilation
-7cecdf9655ef vt: Reject zero-sized screen buffer size.
-c388072f90cc fbdev: Detect integer underflow at "struct fbcon_ops"->clear_margins.
-ead742adb019 serial: 8250_mtk: Fix high-speed baud rates clamping
-c5760ab7aae0 serial: 8250: fix null-ptr-deref in serial8250_start_tx()
-46308fd32f23 staging: comedi: addi_apci_1564: check INSN_CONFIG_DIGITAL_TRIG shift
-1eddbd3d59f3 staging: comedi: addi_apci_1500: check INSN_CONFIG_DIGITAL_TRIG shift
-7358de4aa593 staging: comedi: ni_6527: fix INSN_CONFIG_DIGITAL_TRIG support
-b567ecda4b76 staging: comedi: addi_apci_1032: check INSN_CONFIG_DIGITAL_TRIG shift
-27e29448bde6 staging: wlan-ng: properly check endpoint types
-a9fb0709c26b Revert "cifs: Fix the target file was deleted when rename failed."
-70db3c5ec288 usb: xhci: Fix ASM2142/ASM3142 DMA addressing
-ec9b26263032 usb: xhci-mtk: fix the failure of bandwidth allocation
-d5a5f0e7b39d binder: Don't use mmput() from shrinker function.
-ae3f1e02c9ed x86: math-emu: Fix up 'cmp' insn for clang ias
-887e50646547 arm64: Use test_tsk_thread_flag() for checking TIF_SINGLESTEP
-028792885d6d usb: gadget: udc: gr_udc: fix memleak on error handling path in gr_ep_init()
-95a3bd3f0aa7 Input: synaptics - enable InterTouch for ThinkPad X1E 1st gen
-89ee7f7dab15 dmaengine: ioat setting ioat timeout as module parameter
-a8626d1e4b1a hwmon: (aspeed-pwm-tacho) Avoid possible buffer overflow
-bfdfb71f92a9 regmap: dev_get_regmap_match(): fix string comparison
-153b6cb86880 spi: mediatek: use correct SPI_CFG2_REG MACRO
-d8b49f70fffa Input: add `SW_MACHINE_COVER`
-7db83a5c004b dmaengine: tegra210-adma: Fix runtime PM imbalance on error
-5a8f385e1d06 HID: apple: Disable Fn-key key-re-mapping on clone keyboards
-9861c68e9bcf HID: i2c-hid: add Mediacom FlexBook edge13 to descriptor override
-0280a1eb2308 scripts/decode_stacktrace: strip basepath from all paths
-7b8d75ae4de2 serial: exar: Fix GPIO configuration for Sealevel cards based on XR17V35X
-96b61dc0ce81 bonding: check return value of register_netdevice() in bond_newlink()
-a48f663be2cd i2c: rcar: always clear ICSAR to avoid side effects
-eaca5d0e2899 ipvs: fix the connection sync failed in some cases
-e5c48bab95b4 mlxsw: destroy workqueue when trap_register in mlxsw_emad_init
-5ef388cb6d27 bonding: check error value of register_netdevice() immediately
-3db647de26b5 net: smc91x: Fix possible memory leak in smc_drv_probe()
-07d7e2b80454 drm: sun4i: hdmi: Fix inverted HPD result
-60c0b838244d net: dp83640: fix SIOCSHWTSTAMP to update the struct with actual configuration
-26bcc076586d ax88172a: fix ax88172a_unbind() failures
-9b7fcd3c368d hippi: Fix a size used in a 'pci_free_consistent()' in an error handling path
-562c9d04e545 bnxt_en: Fix race when modifying pause settings.
-bb8911560bc8 btrfs: fix page leaks after failure to lock page for delalloc
-a6979ac2c3f7 btrfs: fix mount failure caused by race with umount
-168e8bb88940 btrfs: fix double free on ulist after backref resolution failure
-ac7fac2f5ec5 ASoC: rt5670: Correct RT5670_LDO_SEL_MASK
-ac27bfe94f53 ALSA: info: Drop WARN_ON() from buffer NULL sanity check
-ac76becc7532 uprobes: Change handle_swbp() to send SIGTRAP with si_code=SI_KERNEL, to fix GDB regression
-2c12c0ac37b4 IB/umem: fix reference count leak in ib_umem_odp_get()
-2631d1bd9656 spi: spi-fsl-dspi: Exit the ISR with IRQ_NONE when it's not ours
-930aee1d1b9f SUNRPC reverting d03727b248d0 ("NFSv4 fix CLOSE not waiting for direct IO compeletion")
-03992c88d71b irqdomain/treewide: Keep firmware node unconditionally allocated
-08f7ddd309d0 drm/nouveau/i2c/g94-: increase NV_PMGR_DP_AUXCTL_TRANSACTREQ timeout
-a488a80a07a8 net: sky2: initialize return of gm_phy_read
-2ba6bea9138a drivers/net/wan/lapbether: Fixed the value of hard_header_len
-237c7a7d9470 xtensa: update *pos in cpuinfo_op.next
-b41b6d12ec00 xtensa: fix __sync_fetch_and_{and,or}_4 declarations
-860b4485caf3 scsi: scsi_transport_spi: Fix function pointer check
-9255e73a4d37 mac80211: allow rx of mesh eapol frames with default rx key
-5f7fb223d77f pinctrl: amd: fix npins for uart0 in kerncz_groups
-9f86ae2ac860 gpio: arizona: put pm_runtime in case of failure
-e9103bb424ad gpio: arizona: handle pm_runtime_get_sync failure case
-
-   * packages/apps/ZenHub
-1a69daa ZenHub: Update maintainer for Lavender
+6c026e2 Update to 20200913 build
 
    * vendor/xiaomi/ginkgo
-9415768 ginkgo: Update graphics blobs from LA.UM.8.11.r1-03800
-6cb8697 ginkgo: Add back dirac blobs
-
-   * vendor/zenx
-28743625 vendor: Add some fonts
-e091a287 vendor: update backup script
-779cb9a5 prebuilt: Add a script to simplify A-only recovery system mount
-a7559ece Revert "vendor: Add some fonts"
-b34ee157 vendor: add BottomTriangle QS style [1/3]
-b1185a5a vendor: notch-city: Make it smarter with orientation [2/2]
-65894174 vendor: update GMS updater component disable list
-ec2f1b16 Add JustIcons QS Tile style [2/3]
-db172ba6 Revert "vendor: [SQUASCH]  Switch to Lawnchair Launcher"
-afef06c7 QStile: Update packages
-1eba13f2 Qstilestyle: Remove teardrop [2/3]
-51638c61 QSTiles: Add a few more designs[2/3]
-714ec1b2 QSTiles: Add CircleOutline styles [2/3]
-54d7076e Shishufied: add Cookie QS style [2/3]
-5302ff3e Add more QS tile style [3/3]
-d7571d0b Add sun custom QS tile [3/3]
-d02836ad Add 5 new QS Tile style [3/3]
-667d1afd Introduce QS tile style picker [3/3]
-fcd6dffe vendor: Fit updater script for our OTA
+64a4272 ginkgo: Use ov8856 chromatix libs from stock pie
+7e61ca4 ginkgo: Update blobs from MIUI 20.9.2
 
 =======================
-     07-29-2020
+     09-12-2020
 =======================
 
 
-   * frameworks/base
-188229658d3 Allow SBC as HD audio codec in Bluetooth device configuration
-db453f5be83 Add switch to select SBC HD by default [1/3]
-445fb4cc5b1 Add missing strings for SBC Dual Channel
-50d86d46c42 A2DP codec priority [1/3]
-7a84f79596b Add CHANNEL_MODE_DUAL_CHANNEL constant
-ba309daf48b The surface hang up when screen on and screen off
-6d5886ec7ed BatteryStatsImpl.java: Stop resetting battery stats after reboot with battery level >= 90
-1fec15a8f56 SystemUI: Make clock truly invisible
-578248a0a7a Add USSD codes over IMS feature
-b5641b0e641 SystemUI: Fix SystemUI failed to go to doze issue
-bb8fd597ca8 gzosp: bring back the utils
-9e3294de884 SystemInfo: Add FileCheck to prevent system crash
+   * device/xiaomi/ginkgo
+b15085b ginkgo: Use ov8856 chromatix libs from stock pie
+
+   * device/xiaomi/trinket-common
+a57b42c trinket-common: Disable bluetooth by default
+27e56dc trinket-common: Reduce overall vibration strength
+4feb683 trinket-common: perf: sched_group_*migrate -> sched_*migrate
+af07903 trinket-common: Update perf stack from LA.UM.8.11.r1-03800
+0f636e0 trinket-common: rootdir: Move all services to background cpuset
+d7f28dd trinket-common: init: Set optimal cpusets for all services
+d719fa2 trinket-common: Move all vendor init rc's to configs/init
+89b38ec trinket-common: Import wifi config edits from stock
+c91a4d1 trinket-common: Nuke hotword enrollment service
+408c11a trinket-common: Fixup boot-time readahead tuning
+151b3cd trinket-common: Update blobs from ginkgo MIUI 20.8.27
+5952169 trinket-common: Refined early phase offsets
+e11b3e8 trinket-common: Add dummy perf profile
+74a2347 trinket-common: Pin the same RenderScript libs as stock
+0d8ecc8 trinket-common: Bring back pinner configs
+ef5e180 trinket-common: Add missing wfd blobs
+067e77c trinket-common: Update qti-telephony-common from DRG
+f3f1c1a trinket-common: Enable supported overlays
+2bf7c61 trinket-common: Add XiaomiDoze
+
+   * external/motorola/faceunlock
+14c3d86 Update FaceunlockService apk
 
    * kernel/xiaomi/ginkgo
-9be661a23972 msm: kgsl: Stop slab shrinker when no more pages can be reclaimed
-b719655a174f msm: kgsl: do not wake up GPU on ioctl
-dd39b7fd3204 cgroups: Replace synchronize_sched() with synchronize_rcu()
-b64adfee9d96 events: Replace synchronize_sched() with synchronize_rcu()
-1dd8374a2726 slab: Replace synchronize_sched() with synchronize_rcu()
-42fb64e52faf mm: fix race between kmem_cache destroy, create and deactivate
-c428e16f0e42 fs/file: Replace synchronize_sched() with synchronize_rcu()
-41e1946a1dc9 kprobes: Replace synchronize_sched() with synchronize_rcu()
-d08238e2fd38 lockdep: Replace synchronize_sched() with synchronize_rcu()
-a6fd312a3bf0 percpu-rwsem: Replace synchronize_sched() with synchronize_rcu()
-a09aae52aa1e tools/kernel.h: Replace synchronize_sched() with synchronize_rcu()
-568afa0d92fa cpufreq/cpufreq_governor: Replace synchronize_sched() with synchronize_rcu()
-0b5b47516d90 livepatch: Replace synchronize_sched() with synchronize_rcu()
-e60271df5075 rcutorture/formal: Replace synchronize_sched() with synchronize_rcu()
-7925a1d22908 tracing: Replace synchronize_sched() and call_rcu_sched()
-4e5d3c6c4772 modules: Replace synchronize_sched() and call_rcu_sched()
-fccc19f84252 net/sched: Replace call_rcu_bh() and rcu_barrier_bh()
-ceb6ce5754d6 percpu-refcount: Replace call_rcu_sched() with call_rcu()
-ba2372fa4b2e workqueue: Replace call_rcu_sched() with call_rcu()
-088c6158336a sched/core: Fix preempt warning in ttwu
-685ee4d9e4ff sched/core: Optimize try_to_wake_up() for local wakeups
-5b01039b2934 sched/topology: Skip duplicate group rewrites in build_sched_groups()
-7a90e3571b2d sched: Replace synchronize_sched() with synchronize_rcu()
-01d2cdde82a9 sched: Replace call_rcu_sched() with call_rcu()
-ba8199a7dbbd sched/wake_q: Add branch prediction hint to wake_q_add() cmpxchg
-69c98c4380af sched/membarrier: Replace synchronize_sched() with synchronize_rcu()
-58e07bde04cc sched/fair: Fix load_balance redo for !imbalance
-ee7d37bbd61a netfilter: conntrack: silent a memory leak warning
-455b06e47695 net: qualcomm: rmnet: Fix incorrect allocation flag in receive path
-571657c55bba rcu: Remove !PREEMPT code from rcu_note_voluntary_context_switch()
-fe8df759cd01 timers: Add a function to start/reduce a timer
-c2459852abdb timer: Convert schedule_timeout() to use from_timer()
-8e2a99eab74c rcu: Clean up flavor-related definitions and comments in rcupdate.h
-1ccc0c90c8d1 rcutorture: Fix expected forward progress duration in OOM notifier
-51fdfa1970a7 rcutorture: Remove ->ext_irq_conflict field
-02ea46370f41 rcutorture: Make rcutorture_extend_mask() comment match the code
-831717ff9352 rcu: Fix nohz status in stall warning
-0e8774875fea rcu: Move forward-progress checkers into tree_stall.h
-cae4564c913b rcu: Move irq-disabled stall-warning checking to tree_stall.h
-af9e427630c3 rcu: Organize functions in tree_stall.h
-6fbfd0801a29 rcu: Move FAST_NO_HZ stall-warning code to tree_stall.h
-552af6aea11d rcu: Inline RCU stall-warning info helper functions
-8bfca6969ada rcu: Move rcu_print_task_exp_stall() to tree_exp.h
-dc3a74aaaf9c rcu: Inline RCU task stall-warning helper functions
-d98d978026c3 rcu: Move RCU CPU stall-warning code out of tree.c
-800000de1167 rcu: Move RCU CPU stall-warning code out of tree_plugin.h
-bb2868c96f02 rcu: Move RCU CPU stall-warning code out of update.c
-5cd14cc46769 srcu: Remove cleanup_srcu_struct_quiesced()
-b1dd98b1e66d srcu: Check for in-flight callbacks in _cleanup_srcu_struct()
-611b96b73958 rcu: Correct READ_ONCE()/WRITE_ONCE() for ->rcu_read_unlock_special
-59c00feb72e7 rcu: Fix typo in tree_exp.h comment
-1fb57832161b rcu: Eliminate redundant NULL-pointer check
-ee7841ce2260 rcu: Fix force_qs_rnp() header comment
-976a99d26b55 rcu: Update jiffies_to_sched_qs and adjust_jiffies_till_sched_qs() comments
-d88696bd2596 rcu: Default jiffies_to_sched_qs to jiffies_till_sched_qs
-5f8a81e3b4b4 rcu: Fix self-wakeups for grace-period kthread
-afb69f045240 rcu: Report error for bad rcu_nocbs= parameter values
-c509d0af20e8 rcu: Allow rcu_nocbs= to specify all CPUs
-485b7796d72c rcu: Move common code out of if-else block
-cb60c876b372 rcu: Set rcutree.kthread_prio sysfs access to read-only
-c6cca9fea347 rcu: Make exit_rcu() handle non-preempted RCU readers
-b1533597174e rcu: rcu_qs -- Use raise_softirq_irqoff to not save irqs twice
-b8235bf146ff rcu: Unconditionally expedite during suspend/hibernate
-aca397fd0be6 rcuperf: Stop abusing IS_ENABLED()
-52c0b5038866 rcutorture: Add grace period after CPU offline
-fc09ee78af53 rcutorture: Record grace periods in forward-progress histogram
-ffab47c64e97 srcu: Remove srcu_queue_delayed_work_on()
-9a767bf40fe6 rcu: Fix obsolete DYNTICK_IRQ_NONIDLE comment
-60fab0f1b4f9 rcu: Repair rcu_nmi_exit() docbook header
-860e1aa91408 rcu: Remove preemption disabling from expedited CPU selection
-51ee508534f3 rcu: Rename rcu_process_callbacks() to rcu_core() for Tree RCU
-4bc0550baad6 rcu: Rename rcu_check_callbacks() to rcu_sched_clock_irq()
-0d2e9d5dcbc9 rcu: Prevent needless ->gp_seq_needed update in __note_gp_changes()
-b660ef32b1ce rcu: Do RCU GP kthread self-wakeup from softirq and interrupt
-a71389e3d114 rcu: Add sysrq rcu_node-dump capability
-816e7cd2420a rcu: Protect rcu_check_gp_kthread_starvation() access to ->gp_flags
-49ef5b5e53e6 rcu: Improve diagnostics for failed RCU grace-period start
-906720165095 rcu: Update NOCB comments
-00b3ed39b767 rcu: Remove unused rcu_cpu_kthread_cpu per-CPU variable
-be52537d3607 rcu: Move rcu_cpu_has_work to rcu_data structure
-a71bdac5de42 rcu: Remove unused rcu_cpu_kthread_loops per-CPU variable
-efa769087863 rcu: Move rcu_cpu_kthread_status to rcu_data structure
-8420c5cba3ce rcu: Move rcu_cpu_kthread_task to rcu_data structure
-035c47947382 rcu: Accommodate zero jiffies_till_first_fqs and kthread kicking
-a10f54d3807c rcu: Discard separate per-CPU callback counts
-8fdf9302e908 rcu: Inline _synchronize_rcu_expedited() into synchronize_rcu_expedited()
-21745acfbe33 rcu: Consolidate PREEMPT and !PREEMPT synchronize_rcu()
-d39c10e80536 rcu: Consolidate PREEMPT and !PREEMPT synchronize_rcu_expedited()
-1d7339d03d0a rcu: Determine expedited-GP IPI handler at build time
-154d2446a7e7 rcu: Inline rcu_kthread_do_work() into its sole remaining caller
-452659d44275 rcu: Eliminate RCU_BH_FLAVOR and RCU_SCHED_FLAVOR
-8c0b31bf26a0 rcu: Inline force_quiescent_state() into rcu_force_quiescent_state()
-97d96a7d2803 rcu: Make expedited IPI handler return after handling critical section
-fee610989d84 rcu: Rename and comment changes due to only one rcuo kthread per CPU
-37b7d46b0f26 rcutorture: Don't do busted forward-progress testing
-402702ae807e rcutorture: Use 100ms buckets for forward-progress callback histograms
-3d16b3b2aa09 rcutorture: Recover from OOM during forward-progress tests
-6ad1a4231216 rcutorture: Print forward-progress test age upon failure
-de80fd19e569 rcutorture: Print time since GP end upon forward-progress failure
-0fe4b8246338 rcutorture: Print histogram of CB invocation at OOM time
-7a0cb90f226f rcutorture: Print GP age upon forward-progress failure
-45079ac52966 rcu: Print per-CPU callback counts for forward-progress failures
-12f50a7425da rcu: Account for nocb-CPU callback counts in RCU CPU stall warnings
-dfad5efff57a rcutorture: Dump grace-period diagnostics upon forward-progress OOM
-e04307dffd02 rcutorture: Prepare for asynchronous access to rcu_fwd_startat
-5b1d658787a3 rcutorture: Affinity forward-progress test to avoid housekeeping CPUs
-e9a8b1dbc6ba rcutorture: Break up too-long rcu_torture_fwd_prog() function
-fa1d70a12061 rcutorture: Remove cbflood facility
-b6ac07dbe779 rcutorture: Add call_rcu() flooding forward-progress tests
-dae4ca826a6a srcu: Use "ssp" instead of "sp" for srcu_struct pointer
-6ad7e5619b73 srcu: Add notrace variants of srcu_read_{lock,unlock}
-f830aea61c35 srcu: Fix kernel-doc missing notation
-f9eefcaa08aa srcu: Add notrace variant of srcu_dereference
-4bbc951d0d2f lockdep: Convert some users to const
-835ace50cc90 rcu: Avoid signed integer overflow in rcu_preempt_deferred_qs()
-583af0666c44 rcu: Replace this_cpu_ptr() with __this_cpu_read()
-1a2f87c2df4c rcu: Speed up expedited GPs when interrupting RCU reader
-4f509a8211a5 rcu: Trace end of grace period before end of grace period
-cfb8f0bf358a rcu: Adjust the comment of function rcu_is_watching
-9a7bfa1dc8e2 rcu: Add jiffies-since-GP-activity to show_rcu_gp_kthreads()
-a900e15a4e4a rcu: Add state name to show_rcu_gp_kthreads() output
-bbfa9cb1a858 rcu: Parameterize rcu_check_gp_start_stall()
-b34abd16e481 rcu: Avoid double multiply by HZ
-731ce4432130 rcu: Eliminate BUG_ON() for kernel/rcu/update.c
-73f7f0f935ad rcu: Eliminate BUG_ON() for kernel/rcu/tree_plugin.h
-7c9e7f54e130 rcu: Stop expedited grace periods from relying on stop-machine
-52e061dea61c srcu: Prevent __call_srcu() counter wrap with read-side critical section
-d7ca1fd17b77 rcu: Consolidate the RCU update functions invoked by sync.c
-b62635ddc237 rcu: Eliminate synchronize_rcu_mult()
-063900a54dce rcu: Fix rcu_{node,data} comments about gp_seq_needed
-22b7be0b95e3 rcu: Remove unused rcu_state externs
-a5527c5d8e81 rcu: Eliminate BUG_ON() for kernel/rcu/tree.c
-a8761432cf0e rcu: Eliminate BUG_ON() for sync.c
-1af018ef7905 srcu: Make early-boot call_srcu() reuse workqueue lists
-fe58caec3cec srcu: Make call_srcu() available during very early boot
-68b04b903017 kernel/SRCU: provide a static initializer
-aa3fcc9a4bc1 rcu: Convert rcu_state.ofl_lock to raw_spinlock_t
-65efd4a701b6 rcu: Remove obsolete ->dynticks_fqs and ->cond_resched_completed
-84071e0a2d63 rcu: Switch ->dynticks to rcu_data structure, remove rcu_dynticks
-984d6e23c3ad rcu: Switch dyntick nesting counters to rcu_data structure
-37093c31ed41 rcu: Switch urgent quiescent-state requests to rcu_data structure
-23fd280c920a rcu: Switch lazy counts to rcu_data structure
-4269d216df15 rcu: Switch last accelerate/advance to rcu_data structure
-05b3d61d9e23 rcu: Switch ->tick_nohz_enabled_snap to rcu_data structure
-9bef7e822ec7 rcu: Merge rcu_dynticks structure into rcu_data structure
-ee99b6a18dc0 rcu: Convert "1UL << x" to "BIT(x)"
-6a8079d2e83b rcu: Avoid resched_cpu() when rescheduling the current CPU
-f282bb1641f3 rcu: More aggressively enlist scheduler aid for nohz_full CPUs
-5ffb758f4785 rcu: Compute jiffies_till_sched_qs from other kernel parameters
-28a0b5cd8425 rcu: Provide functions for determining if call_rcu() has been invoked
-a2b9ad9017ab rcu: Eliminate ->rcu_qs_ctr from the rcu_dynticks structure
-c043ce3e13f5 rcu: Motivate Tiny RCU forward progress
-84887774a6c3 rcutorture: Dump reader protection sequence if failures or close calls
-ade91485d0a3 rcu: Provide improved interrupt-from-idle check in rcu_check_callbacks()
-fe22115b3cc3 rcu: Make need_resched() respond to urgent RCU-QS needs
-94d26ac85008 rcu: Inline _rcu_barrier() into its sole remaining caller
-49cfd63d05d5 rcu: Define rcu_all_qs() only in !PREEMPT builds
-bf243d50c5e1 rcu: Clean up flavor-related definitions and comments in update.c
-30d248dae922 rcu: Clean up flavor-related definitions and comments in tree_plugin.h
-12c658f74cba rcu: Clean up flavor-related definitions and comments in tree_exp.h
-659ed4fed490 rcu: Clean up flavor-related definitions and comments in tree.c
-8dd91858bc44 rcu: Clean up flavor-related definitions and comments in tiny.c
-5137668936d9 rcu: Clean up flavor-related definitions and comments in srcutree.h
-014e2aa63825 rcu: Clean up flavor-related definitions and comments in rcutorture.c
-9900795aa29b rcu: Clean up flavor-related definitions and comments in rcu.h
-ec15bf8057ae rcu: Clean up flavor-related definitions and comments in Kconfig
-be6b409313c5 rcu: Remove now-unused rcutorture APIs
-c8149f68901f rcuperf: Remove the "rcu_bh" and "sched" torture types
-863fe895c9bb rcutorture: Remove the "rcu_bh" and "sched" torture types
-9029a23d96f4 rcu: Stop testing RCU-bh and RCU-sched
-a64954a95a7e rcutorture: Add RCU-bh and RCU-sched support for extended readers
-ecbbfdd3d0f6 rcu: Consolidate RCU-sched update-side function definitions
-b3bd839aa0c2 rcu: Consolidate RCU-bh update-side function definitions
-d407db422876 rcu: Pull rcu_gp_kthread() FQS loop into separate function
-f6dc75dbc3cd rcu: Inline increment_cpu_stall_ticks() into its sole caller
-c1767d3ccf95 rcu: Fix typo in force_qs_rnp()'s parameter's parameter
-3d751e10eeee rcu: Eliminate initialization-time use of rsp
-6a012dff8094 rcu: Eliminate RCU-barrier use of rsp
-809f7ceb5bc6 rcu: Eliminate quiescent-state and grace-period-nonstart use of rsp
-007c9cc2c380 rcu: Eliminate callback-invocation/invocation use of rsp
-512ec4dc308f rcu: Eliminate grace-period management code use of rsp
-b81ad07cf11d rcu: Eliminate stall-warning use of rsp
-c7e37aa04b6c rcu: Restructure rcu_check_gp_kthread_starvation()
-fcf54a27da71 rcu: Simplify rcutorture_get_gp_data()
-768971acf409 rcu: Remove for_each_rcu_flavor() flavor-traversal macro
-e7757c607752 rcu: Remove last non-flavor-traversal rsp local variable from tree_plugin.h
-21d24e7f7107 rcu: Remove rcu_data structure's ->rsp field
-54a0311d6e48 rcu: Remove rsp parameter from rcu_node tree accessor macros
-944af594e487 rcu: Remove rsp parameter from expedited grace-period functions
-fb6ac47a6ecb rcu: Remove rsp parameter from no-CBs CPU functions
-ef62ba8e10c5 rcu: Remove rsp parameter from print_cpu_stall_info()
-73ebd0c24df1 rcu: Remove rsp parameter from rcu_spawn_one_boost_kthread()
-8837161fc6a8 rcu: Remove rsp parameter from dump_blkd_tasks() and friend
-38c02ae52a36 rcu: Remove rsp parameter from rcu_print_detail_task_stall()
-9d7de6163a28 rcu: Remove rsp parameter from rcu_init_one() and friends
-7cccaf177730 rcu: Remove rsp parameter from rcu_boot_init_percpu_data() and friends
-7ae47d796ff6 rcu: Remove rsp parameter from _rcu_barrier() and friends
-4426be7ca463 rcu: Remove rsp parameter from __rcu_pending()
-66049b22cab7 rcu: Remove rsp parameter from __call_rcu() and friend
-874680783dd4 rcu: Remove rsp parameter from __rcu_process_callbacks()
-2509158caeb3 rcu: Remove rsp parameter from rcu_check_gp_start_stall()
-0dfbf6238acd rcu: Remove rsp parameter from force-quiescent-state functions
-e39d092ebf74 rcu: Remove rsp parameter from rcu_do_batch()
-acd54903d4a3 rcu: Remove rsp parameter from CPU hotplug functions
-e3b1205059f5 rcu: Remove rsp parameter from rcu_check_quiescent_state()
-8481c6e1573f rcu: Remove rsp parameter from rcu_gp_kthread() and friends
-8dbf95d7e1f0 rcu: Remove rsp parameter from rcu_gp_slow()
-5ce922d84115 rcu: Remove rsp parameter from note_gp_changes()
-a894e23db832 rcu: Remove rsp parameter from __note_gp_changes()
-42b3d6449a93 rcu: Remove rsp parameter from rcu_advance_cbs()
-2871b4c1ccad rcu: Remove rsp parameter from rcu_accelerate_cbs()
-078bb3fd99fb rcu: Remove rsp parameter from rcu_accelerate_cbs_unlocked()
-80e8180046b5 rcu: Remove rsp parameter from rcu_gp_kthread_wake()
-0b68b7d633d7 rcu: Remove rsp parameter from rcu_future_gp_cleanup()
-8ea69bdd4e8a rcu: Remove rsp parameter from check_cpu_stall()
-cb16b6cd24c4 rcu: Remove rsp parameter from print_cpu_stall()
-d9fd11249038 rcu: Remove rsp parameter from print_other_cpu_stall()
-c0650967adb1 rcu: Remove rsp parameter from rcu_stall_kick_kthreads()
-12b530d4c6c8 rcu: Remove rsp parameter from rcu_dump_cpu_stacks()
-f51a723db6a4 rcu: Remove rsp parameter from rcu_check_gp_kthread_starvation()
-eea11e0bb45b rcu: Remove rsp parameter from record_gp_stall_check_time()
-10e68043971a rcu: Remove rsp parameter from rcu_get_root()
-39072ebd0273 rcu: Remove rsp parameter from rcu_gp_in_progress()
-88e3b46e5afe rcu: Remove rsp parameter from rcu_report_qs_rdp()
-aa17f5649b19 rcu: Remove rsp parameter from rcu_report_unblock_qs_rnp()
-bdc8a44f05bf rcu: Remove rsp parameter from rcu_report_qs_rsp()
-c50f981c38e2 rcu: Remove rsp parameter from rcu_report_qs_rnp()
-19c5c3f48ea0 rcu: Remove rcu_data_p pointer to default rcu_data structure
-68f140288e7e rcu: Remove rcu_state_p pointer to default rcu_state structure
-8de8847e37fb rcu: Remove rcu_state structure's ->rda field
-2b22dd70376c rcu: Eliminate rcu_state structure's ->call field
-9424ed48d591 rcu: Remove RCU_STATE_INITIALIZER()
-918f0daa382c rcu: Express Tiny RCU updates in terms of RCU rather than RCU-sched
-04b8967a03c6 rcu: Define RCU-sched API in terms of RCU for Tree RCU PREEMPT builds
-0c2ac1fc29a1 Revert "rcu: Make need_resched() respond to urgent RCU-QS needs"
-fd454686f6f6 rcu: Fix typo in rcu_get_gp_kthreads_prio() header comment
-88ba9c87c0d8 rcu: Drop "wake" parameter from rcu_report_exp_rdp()
-2d9972f1755e rcu: Update comments and help text for no more RCU-bh updaters
-1fccfc55ce9f rcu: Define RCU-bh update API in terms of RCU
-0aaba54fb348 rcu: Report expedited grace periods at context-switch time
-498807552ef5 rcu: Apply RCU-bh QSes to RCU-sched and RCU-preempt when safe
-e42e907c34f1 rcu: Add warning to detect half-interrupts
-a19987799c2b rcu: Remove now-unused ->b.exp_need_qs field from the rcu_special union
-395b1b9e5692 rcu: Allow processing deferred QSes for exiting RCU-preempt readers
-82bb3c9e471e rcutorture: Test extended "rcu" read-side critical sections
-ac4417be8972 rcu: Defer reporting RCU-preempt quiescent states when disabled
-10806b457eb1 rcu: Refactor rcu_{nmi,irq}_{enter,exit}()
-bfa4c2fbbbed rcutorture: Maintain self-propagating CB only during forward-progress test
-ee4cef884ca1 rcutorture: Check GP completion at stutter end
-09198bec0efb rcutorture: Print forward-progress test interval on error
-023e2bff7e2d rcutorture: Adjust number of reader kthreads per CPU-hotplug operations
-5f430812f52c rcutorture: Reduce priority of forward-progress testing
-36aa9c791e45 rcutorture: Limit reader duration if irq or bh disabled
-8e9dd61fe489 rcutorture: Increase rcu_read_delay() longdelay_ms
-f4fff89d2a9f rcutorture: Add self-propagating callback to forward-progress testing
-e48e23ea558b rcutorture: Vary forward-progress test interval
-b490f9c6a3b7 rcutorture: Avoid no-test complaint if too few forward-progress tries
-e1a6c238e428 rcutorture: Also use GP sequence to judge forward progress
-0b00f4abd53f rcutorture: Add forward-progress tests for RCU grace periods
-5ad21c31bd90 rcuperf: Warn on bad perf type for built-in tests
-7483cdb24c91 rcutorture: Warn on bad torture type for built-in tests
-ef1afdbe7501 rcutorture: Force occasional reader waits
-7a9b6cb2a008 sched/swait: Switch to full exclusive mode
-5adf2ce901a1 sched/swait: Remove __prepare_to_swait
-548b1a4b8527 PM / s2idle: Make s2idle_wait_head swait based
-71ccf94f07f4 sched/core: Optimize update_stats_*()
-2fb1305f9b04 sched/core: Optimize ttwu_stat()
-a82f8e7951fd sched/deadline: Don't use dubious signed bitfields
-245caa6a07ec sched/deadline: Use C bitfields for the state flags
-b3ede7b823f7 sched/deadline: Fix missing clock update
-94914a94f93c arm64: vdso32: Fix '--prefix=' value for newer versions of clang
-ff4fa126f754 Makefile: Fix GCC_TOOLCHAIN_DIR prefix for Clang cross compilation
-ebbf4da325bd Merge commit '624eff1ba9d0ad7c72ece78b9dad9b0de6ac7e03' into HEAD
+44c86cc14f2b build.sh: -j$(nproc --all)
 
-   * packages/apps/Bluetooth
-76e727c7 Add switch to select SBC HD by default [2/3]
-8e4284c7 Disable Dual channel for SBC by default
-b3569b67 A2DP codec priority [2/3]
-a00351fb Assume optional codecs are supported if were supported previously
-bf8da871 SBC Dual Channel (SBC HD Audio) support
-
-   * packages/apps/Settings
-04d64c1584 fixup! BasebandVersionPreferenceController: Trim baseband if needed
-1182348b5e Add switch to select SBC HD by default [3/3]
-a139d0885b Add Dual Channel into Bluetooth Audio Channel Mode developer options menu
-047eac4945 A2DP codec priority [3/3]
-
-   * packages/apps/ThemePicker
-e5300cc ThemePicker: Increase Margin top to avoid Text overlap
-
-   * packages/apps/ZenHub
-677f663 ZenHub: Increase bottom margin to avoid icon overlap
+   * packages/resources/devicesettings
+ce90d23 Automatic translation import
 
 =======================
-     07-28-2020
+     09-11-2020
 =======================
 
-
-   * build/soong
-3f6640a6 Allow arm-linux-androidkernel-ld
-1b22395e Allow arm-linux-androidkernel-as
 
    * kernel/xiaomi/ginkgo
-20b2b5eb3911 qcacmn: Fix OOB issue in wlan_parse_rsn_ie
+c69c91a1b3f4 Merge tag 'v4.14.197' into 11.0
+0ed56d122ec8 Revert "Revert "usb: gadget: f_mtp: Increase default TX buffer size""
+4836708294b7 Revert "Revert "usb: gadget: mtp: Increase RX transfer length to 1M""
+4925bd2474fd include: ion: define ion_user_handle_t
+
+=======================
+     09-10-2020
+=======================
+
+
+   * external/chromium-webview
+cd830a4 Update Chromium Webview to 85.0.4183.101
+
+   * kernel/xiaomi/ginkgo
+f2ec303ac640 Revert "usb: dwc3-msm: Remove indefinite wakeup"
+458a534cac0c Linux 4.14.197
+2886fd1af2db net: usb: Fix uninit-was-stored issue in asix_read_phy_addr()
+02015d244d9c cfg80211: regulatory: reject invalid hints
+c4b219136040 mm/hugetlb: fix a race between hugetlb sysctl handlers
+b7d6cfba234c checkpatch: fix the usage of capture group ( ... )
+54ffbb8c9296 KVM: arm64: Set HCR_EL2.PTW to prevent AT taking synchronous exception
+74ecd51bc6b6 KVM: arm64: Survive synchronous exceptions caused by AT instructions
+fcc0896148c8 KVM: arm64: Defer guest entry when an asynchronous exception is pending
+91532df62f61 KVM: arm64: Add kvm_extable for vaxorcism code
+11cc56821513 mm: slub: fix conversion of freelist_corrupted()
+eb71cd253b2a dm thin metadata: Avoid returning cmd->bm wild pointer on error
+dd20b2c464a7 dm cache metadata: Avoid returning cmd->bm wild pointer on error
+7819f78f87e0 libata: implement ATA_HORKAGE_MAX_TRIM_128M and apply to Sandisks
+9f086cac5181 block: Move SECTOR_SIZE and SECTOR_SHIFT definitions into <linux/blkdev.h>
+b7aae706e84a block: allow for_each_bvec to support zero len bvec
+b9857b87ffcc affs: fix basic permission bits to actually work
+955bd0c0a7ad ALSA: firewire-digi00x: exclude Avid Adrenaline from detection
+805aebc26cca ALSA: hda/hdmi: always check pin power status in i915 pin fixup
+e463aed86fce ALSA: pcm: oss: Remove superfluous WARN_ON() for mulaw sanity check
+e8e9ec81957f ALSA: ca0106: fix error code handling
+30b0f412f395 usb: qmi_wwan: add D-Link DWM-222 A2 device ID
+23e13527ecca net: usb: qmi_wwan: add Telit 0x1050 composition
+80c8b74ce1fd btrfs: fix potential deadlock in the search ioctl
+6aa022755fa1 uaccess: Add non-pagefault user-space write function
+f4abfb03a387 uaccess: Add non-pagefault user-space read functions
+a6d4a84d569f btrfs: set the lockdep class for log tree extent buffers
+8ab36da262fd btrfs: Remove extraneous extent_buffer_get from tree_mod_log_rewind
+e23efd6da3a6 btrfs: Remove redundant extent_buffer_get in get_old_root
+72de52916de6 btrfs: drop path before adding new uuid tree entry
+5ace0847122f include/linux/log2.h: add missing () around n in roundup_pow_of_two()
+905f44ec6e0e thermal: ti-soc-thermal: Fix bogus thermal shutdowns for omap4430
+deb5efa71e6d iommu/vt-d: Serialize IOMMU GCMD register modifications
+751deef5de35 tg3: Fix soft lockup when tg3_reset_task() fails.
+c5c6e00f6cc5 fix regression in "epoll: Keep a reference on files added to the check list"
+cfb5e057b717 net: ethernet: mlx4: Fix memory allocation in mlx4_buddy_init()
+dcd257f64ca5 perf tools: Correct SNOOPX field offset
+41cb677dad4c nvmet-fc: Fix a missed _irqsave version of spin_lock in 'nvmet_fc_fod_op_done()'
+58a6d70b26c4 bnxt_en: Fix PCI AER error recovery flow
+e19de8e3c0a6 bnxt_en: Check for zero dir entries in NVRAM.
+c05e296d7710 gtp: add GTPA_LINK info to msg sent to userspace
+b879326610bb dmaengine: pl330: Fix burst length if burst size is smaller than bus width
+007a4850de1f net: arc_emac: Fix memleak in arc_mdio_probe
+1f5c83c39422 ravb: Fixed to be able to unload modules
+4b0a22bd0d49 net: systemport: Fix memleak in bcm_sysport_probe
+9de4fede0b35 net: hns: Fix memleak in hns_nic_dev_probe
+1e1fc7726b17 netfilter: nf_tables: fix destination register zeroing
+b2e1d023e026 netfilter: nf_tables: incorrect enum nft_list_attributes definition
+cfb399059d50 netfilter: nf_tables: add NFTA_SET_USERDATA if not null
+f1a5d69cebec MIPS: BMIPS: Also call bmips_cpu_setup() for secondary cores
+4c65a7832377 MIPS: mm: BMIPS5000 has inclusive physical caches
+1eac2071cbb4 dmaengine: at_hdmac: check return value of of_find_device_by_node() in at_dma_xlate()
+fda74a64f580 batman-adv: bla: use netif_rx_ni when not in interrupt context
+3e0e9d5e20aa batman-adv: Fix own OGM check in aggregated OGMs
+8ddda2d99d1d batman-adv: Avoid uninitialized chaddr when handling DHCP
+34f79cd0d1bf dmaengine: of-dma: Fix of_dma_router_xlate's of_dma_xlate handling
+570e18737120 xen/xenbus: Fix granting of vmalloc'd memory
+67e89bc48ac8 s390: don't trace preemption in percpu macros
+6f324263b54e cpuidle: Fixup IRQ state
+1dd11998941e ceph: don't allow setlease on cephfs
+06ced97a6ec8 nvmet: Disable keep-alive timer when kato is cleared to 0h
+3e740e7637a1 hwmon: (applesmc) check status earlier.
+3d516e369e3a drm/msm: add shutdown support for display platform_driver
+11519e7b9776 perf record/stat: Explicitly call out event modifiers in the documentation
+a083dcdcfa25 HID: core: Sanitize event code and type when mapping input
+9e5894b7e222 HID: core: Correctly handle ReportSize being zero
+
+=======================
+     09-09-2020
+=======================
+
+
+   * vendor/qcom/opensource/commonsys/system/bt
+614a3e2ac Changed HID_DEV_MTU_SIZE from 64 to 512
+
+=======================
+     09-08-2020
+=======================
+
+
+=======================
+     09-07-2020
+=======================
+
+
+   * kernel/xiaomi/ginkgo
+ecae1f5092b8 ARM64/configs: ginkgo: Configure default rate-limit for schedutil
+d70b22b23b6f cpufreq: schedutil: Ignore work_in_progress
+0a1be392c46f cpufreq: schedutil: Avoid missing updates for one-CPU policies
+975c4672b51f cpufreq: schedutil: Allow cpufreq requests to be made even when kthread kicked
+3a42ac92f0b6 cpufreq: schedutil: likely(use_pelt()) -> use_pelt()
+f3ed8ee02c42 cpufreq: Avoid leaving stale IRQ work items during CPU offline
+06c9ef7eef85 cpufreq: schedutil: Queue sugov irq work on policy online cpu
+ac3bb51c258e cpufreq: schedutil: Expose default configuration options and apply init protection
+2d1e1c2e57c6 cpufreq: schedutil: remove tracing
+bad763a3c139 cpufreq: schedutil: Replace synchronize_sched() with synchronize_rcu()
+03801e7b33ae cpufreq: schedutil: fix check for stale utilization values
+8ef1e7779d32 cpufreq: schedutil: use rt_avg as estimate of required RT CPU capacity
+95645951705a cpufreq: schedutil: Revert "Fix for CR 2040904"
+60d39d02f1f2 cpufreq: schedutil: Don't skip freq update when limits change
+c0be57a207cf cpufreq: schedutil: clear cached_raw_freq when invalidated
+9ea06966d01e cpufreq: schedutil: Don't set next_freq to UINT_MAX
+f3f35fae4428 cpufreq: schedutil: Fix iowait boost reset
+1afec7748897 cpufreq: schedutil: Make iowait_boost optional
+b577e9fce3f8 Revert "sched: Improve the scheduler"
+5a9c283c8410 schedutil: Checkout to https://github.com/android-linux-stable/msm-4.14/commit/800302cf121051b3ceb00e79a180d019f5acccf4
+
+   * packages/apps/OmniStyle
+c699dfb OmniStyle:Add naruto,dragonballz and superhero headers *These images have been picked from various commits *credit to @GMLR27v2 *Credits to all those unknown authors of the images
+4497f45 Revert "OmniStyle: Add 'Colorful' headers"
+e14159a Revert "OmniStyle: Add 'Space' headers"
+60dd47c Revert "OmniStyle: Add itsaalex poison headers"
+
+   * vendor/lawnchair
+7229e7c Merge pull request #1 from Raaj52/ten
+260beca Lawnchair: Introduce TARGET_MINIMAL_APPS
+
+=======================
+     09-06-2020
+=======================
+
+
+   * kernel/xiaomi/ginkgo
+89897571e3be sysctl: Bump top app dstune boost to 20
 
    * manifest
-e2c01f9 Revert "Track android_vendor_oplauncher"
-
-=======================
-     07-27-2020
-=======================
-
-
-   * external/pulse
-0cb63d4 Fix NPE and UI crash on Activating Pulse with hidden gesture pill
-
-   * frameworks/base
-649c6dacc0f base: Add IconShapeMallowOverlay
-95acd60a446 base: add BottomTriangle QS style [1/3]
-5e3d0dbe2d4 SystemUI: Use regular global_actions_column layout for layout-sw600dp-land
-
-   * kernel/xiaomi/ginkgo
-578ed5489f45 ginkgo: Disable debugfs and regenerate
-70b4cd5c8a5c techpack: max98937: Fix build error with debugfs disabled
-8e16417996f2 sysctl: promote several nodes out of CONFIG_SCHED_DEBUG
-527a2be7d1c2 sysctl: promote sched_migration_cost_ns out of CONFIG_SCHED_DEBUG
-798e4e3d9d7d kmemleak: remove DEBUG_FS dependency
-2a4394f3d009 lib: debug: remove DEBUG_KERNEL dependency from SCHED_DEBUG
-991e22a17217 msm: clk: fix build errors with disabled debugfs
-61307b11ea21 qcom: hyp_core_ctl: add a missing header
-282179e76986 ufshcd: fix 'parameter name omitted' error
-f53dce7c1ed6 mhi_netdev: fix debug_fs related error
-b5f6a8de3ece techpack: fix the rest of debug_fs related errors
-8e4a8850cce5 msm: gsi: disable debug driver
-3561408dc637 msm: tsens: fix broken loggers
-9dbfafdbe424 msm: ipa: enable debugfs usage
-f1ee2577dff7 drm: sde: ifdef an unused function
-28e235da736b drm: dp: enable debugfs usage
-0935f3c53120 msm: qcedev: don't bail out if debugfs is disabled
-22c5b460d06f drm/msm: Don't bail out when debugfs creation fails
-92e7a23a5a71 drm/msm/dsi-staging: Don't bail out when debugfs creation fails
-5fbc3b73d46f msm: crypto: fix compilation with debugfs disabled
-75852872bdaa techpack: fix compilation with debugfs disabled
-b2fdee941f2e crypto: msm: Don't bail out when debugfs creation fails
-a37406316b30 wakeup: Enable debugfs usage
-bb1be4be5fee debugfs: Always compile core debugfs driver for Android kernels
-ab410e25abc4 msm: sps: Fix compile errors when debugfs is disabled
-72c292cb373c msm: ipa3: Fix compile errors when debugfs is disabled
-da3143eb3801 firmware: qcom: Remove debugfs dependency from tz-log driver
-13910d76c0f0 clk: Fix compile errors when debugfs is disabled
-903322269908 msm: vidc: Fix broken debugfs creation error checks and error paths
-b01233f06949 msm: sde: Fix compile errors when debugfs is disabled
-8fce327a7dc3 msm: vidc: increase msm_vidc_hw_rsp_timeout to 1500
-84a49bf3ded4 PM / core: Add support to skip power management in device/driver model
-2cac873968b7 [FIXUP] efeb14b ("cpufreq: schedutil: Don't set next_freq to UINT_MAX")
-27444cfceddb ion: system_heap: fix a constant-conversion warning
-e00965beb083 seq_file: Introduce DEFINE_SHOW_ATTRIBUTE() helper macro
-80c36243f7cc mfd: ab8500: Introduce DEFINE_SHOW_ATTRIBUTE() macro
-7d57f0f3335c Bluetooth: introduce DEFINE_SHOW_ATTRIBUTE() macro
-b827804c4fad ASoC: sm6150: Report correct key code of headset buttons
-f363080ae59d ginkgo: Make ion allocate in page-sized chunks
-30718fe4b612 ginkgo: Enable ion system heap
+b1c42a9 Merge pull request #3 from Raaj52/ten
+488892f manifest: Track Lawnchair from now
 
    * prebuilts/clang/host/linux-x86/clang-12.0
-a819e2f readme: Document solutions for some common problems
+2295e58 Update to 20200906 build
+
+   * vendor/lawnchair
+6c373e7 Updated Weather App to v2.7.1
+b6c5425 Fix bootloop on system only devices (3/3)
+d94a791 Use TARGET_COPY_OUT_PRODUCT
+cdfb307 Added Oneplus Weather App, Icon packs & Widgets
+c65ab29 prebuilts: Update libhoko_blur.so
+714c69c prebuilts: Improve Lawnchair build config
+d29fd41 Lawnchair: Bringing up for ZenX-OS!
+
+   * vendor/zenx
+3ace98dc Merge pull request #3 from Raaj52/ten
+15c658d8 vendor: common: Add Lawnchair conditionally
+
+=======================
+     09-05-2020
+=======================
+
+
+   * kernel/xiaomi/ginkgo
+c714a97929ab ARM64/configs: ginkgo: Regen defconfig
+acbcf8bc618c cpufreq: Allow configuring default minimum frequencies in Kconfig
+44f0b5f1dd61 ARM64/dts: trinket: Add back 300 MHz cpu frequency
+8a7294894c41 cpu_input_boost: Don't boost to max on powerkey press
+4310c7f6358f cpu_input_boost: Get max boost freq from policy->cpuinfo.max_freq
+54567bebc47d cpu_input_boost: Restore original min_freq after boosting
+d6e943351567 cpufreq: Allow user to change min/max freq
+
+=======================
+     09-04-2020
+=======================
+
+
+   * device/xiaomi/ginkgo
+60427b0 ginkgo: Update blobs from MIUI 20.9.2
+
+   * kernel/xiaomi/ginkgo
+39bf7107ab85 include/linux: Fix Clang-12 compound-token-split-by-space warnings
+36767d9b5d64 Merge tag 'v4.14.196' into quartz
+2f166cdcf8a9 Linux 4.14.196
+79c16fe5893d ALSA: usb-audio: Update documentation comment for MS2109 quirk
+ff51a1a2dca3 HID: hiddev: Fix slab-out-of-bounds write in hiddev_ioctl_usage()
+0a221a7442cc tpm: Unify the mismatching TPM space buffer sizes
+24ae96c55221 btrfs: check the right error variable in btrfs_del_dir_entries_in_log
+68ca0183bb3b usb: storage: Add unusual_uas entry for Sony PSZ drives
+f5429d349bce USB: cdc-acm: rework notification_buffer resizing
+13ae2b82fde0 USB: gadget: u_f: Unbreak offset calculation in VLAs
+b88ad6e71428 USB: gadget: f_ncm: add bounds checks to ncm_unwrap_ntb()
+fc0019fac05f USB: gadget: u_f: add overflow checks to VLA macros
+80459b71e2ce overflow.h: Add allocation size calculation helpers
+68030a67f595 usb: host: ohci-exynos: Fix error handling in exynos_ohci_probe()
+247dac52688a USB: Ignore UAS for JMicron JMS567 ATA/ATAPI Bridge
+c31e413a94eb USB: quirks: Add no-lpm quirk for another Raydium touchscreen
+de455746948a usb: uas: Add quirk for PNY Pro Elite
+413092c085ca USB: yurex: Fix bad gfp argument
+5430e7638ef4 drm/amdgpu: Fix buffer overflow in INFO ioctl
+fb545b9fc756 device property: Fix the secondary firmware node handling in set_primary_fwnode()
+ef0a51a72bd2 PM: sleep: core: Fix the handling of pending runtime resume requests
+a8a1ea8bc522 xhci: Do warm-reset when both CAS and XDEV_RESUME are set
+881947cde19a XEN uses irqdesc::irq_data_common::handler_data to store a per interrupt XEN data pointer which contains XEN specific information.
+77322edb99f0 writeback: Fix sync livelock due to b_dirty_time processing
+856fa4ebf57c writeback: Avoid skipping inode writeback
+0fa1f08619cc writeback: Protect inode->i_io_list with inode->i_lock
+5026ce65aacb serial: 8250: change lock order in serial8250_do_startup()
+8284edbf3754 serial: 8250_exar: Fix number of ports for Commtech PCIe cards
+fe5d0805aac9 serial: pl011: Don't leak amba_ports entry on driver register error
+4ad066160a36 serial: pl011: Fix oops on -EPROBE_DEFER
+d1fff1120df8 serial: samsung: Removes the IRQ not found warning
+422ef2b827a9 vt_ioctl: change VT_RESIZEX ioctl to check for error return from vc_resize()
+47b7a50f8ace vt: defer kfree() of vc_screenbuf in vc_do_resize()
+0aa219d64fc0 USB: lvtest: return proper error code in probe
+2c455e9c5865 fbcon: prevent user font height or width change from causing potential out-of-bounds access
+8b5638b71483 btrfs: fix space cache memory leak after transaction abort
+600662712843 HID: i2c-hid: Always sleep 60ms after I2C_HID_PWR_ON commands
+d6fdc62d9762 powerpc/perf: Fix soft lockups due to missed interrupt accounting
+0acc2a637128 net: gianfar: Add of_node_put() before goto statement
+a803d5eac7fb scsi: ufs: Clean up completed request without interrupt notification
+8965d8231117 scsi: ufs: Improve interrupt handling for shared interrupts
+7a44fce0d135 scsi: ufs: Fix possible infinite loop in ufshcd_hold
+cd124e99afd4 s390/cio: add cond_resched() in the slow_eval_known_fn() loop
+488efbc0b49a spi: stm32: fix stm32_spi_prepare_mbr in case of odd clk_rate
+1517868cacc9 fs: prevent BUG_ON in submit_bh_wbc()
+1f6ba385cb5e jbd2: abort journal if free a async write error metadata buffer
+60e2824ab30a ext4: don't BUG on inconsistent journal feature
+0360bad69852 jbd2: make sure jh have b_transaction set in refile/unfile_buffer
+14ab480de0ba usb: gadget: f_tcm: Fix some resource leaks in some error paths
+6fd5a1673f6b i2c: rcar: in slave mode, clear NACK earlier
+3146b3220c1b null_blk: fix passing of REQ_FUA flag in null_handle_rq
+b94544a0ba33 nvme-fc: Fix wrong return value in __nvme_fc_init_request()
+b3650117d1d2 media: gpio-ir-tx: improve precision of transmitted signal due to scheduling
+17519b497871 Revert "ath10k: fix DMA related firmware crashes on multiple devices"
+ab0c78f79ec6 efi: provide empty efi_enter_virtual_mode implementation
+2a985b62c2d2 USB: sisusbvga: Fix a potential UB casued by left shifting a negative value
+63ccfdbca5de powerpc/spufs: add CONFIG_COREDUMP dependency
+7f088336d6f2 KVM: arm64: Fix symbol dependency in __hyp_call_panic_nvhe
+b2504e03d375 media: davinci: vpif_capture: fix potential double free
+332f8c222590 EDAC/ie31200: Fallback if host bridge device is already initialized
+6619f6a9b365 scsi: fcoe: Memory leak fix in fcoe_sysfs_fcf_del()
+24cea2ec68a0 ceph: fix potential mdsc use-after-free crash
+a5de479530d3 scsi: iscsi: Do not put host in iscsi_set_flashnode_param()
+1cd492f839c9 locking/lockdep: Fix overflow in presentation of average lock-time
+774c302c225a drm/nouveau: Fix reference count leak in nouveau_connector_detect
+bcd0b71b6e82 drm/nouveau/drm/noveau: fix reference count leak in nouveau_fbcon_open
+de43394549bf f2fs: fix use-after-free issue
+e6a62b5c4f7a cec-api: prevent leaking memory through hole in structure
+aa8ef5d342cc mips/vdso: Fix resource leaks in genvdso.c
+5acc8fd6fffd rtlwifi: rtl8192cu: Prevent leaking urb
+d3d12858d45c PCI: Fix pci_create_slot() reference count leak
+f8e0dad8be89 omapfb: fix multiple reference count leaks due to pm_runtime_get_sync
+59530d3e0d5d selftests/powerpc: Purge extra count_pmc() calls of ebb selftests
+939a7390d48c scsi: lpfc: Fix shost refcount mismatch when deleting vport
+c7aa94be6daf drm/amdgpu/display: fix ref count leak when pm_runtime_get_sync fails
+5f8cf9e55e75 drm/amdgpu: fix ref count leak in amdgpu_display_crtc_set_config
+5c25e3ac06e4 drm/amd/display: fix ref count leak in amdgpu_drm_ioctl
+59e0b73b5d90 drm/amdgpu: fix ref count leak in amdgpu_driver_open_kms
+a0f19b6175dd drm/radeon: fix multiple reference count leak
+4704cd249f8d drm/amdkfd: Fix reference count leaks.
+0c9824793270 iommu/iova: Don't BUG on invalid PFNs
+3e760e5384ad scsi: target: tcmu: Fix crash on ARM during cmd completion
+249681376f93 blktrace: ensure our debugfs dir exists
+5c043e7826d8 media: pci: ttpci: av7110: fix possible buffer overflow caused by bad DMA value in debiirq()
+3e5b6ab3a4c1 powerpc/xive: Ignore kmemleak false positives
+44c90f5ede45 arm64: dts: qcom: msm8916: Pull down PDM GPIOs during sleep
+08295e1188ef mfd: intel-lpss: Add Intel Emmitsburg PCH PCI IDs
+63d5985db888 ASoC: tegra: Fix reference count leaks.
+9b5b926bfcd5 ALSA: pci: delete repeated words in comments
+70154c4f30dd gre6: Fix reception with IP6_TNL_F_RCV_DSCP_COPY
+4f4860ca01b3 ipvlan: fix device features
+e7addd2057cd tipc: fix uninit skb->data in tipc_nl_compat_dumpit()
+5d28f39d847e net: Fix potential wrong skb->protocol in skb_vlan_untag()
+8d3dc7f94175 powerpc/64s: Don't init FSCR_DSCR in __init_FSCR()
+c32a8c78d362 msm: kgsl: Remove VM_MAYWRITE flag to restrict mprotect
+
+   * packages/apps/ZenHub
+68675ca Revert "ZenHub: Nuke Oreo Volume Panel"
+
+   * vendor/miuicamera
+016c137 MiuiCamera: Update apk from V11.0.20.0.QFQMIXM
+
+=======================
+     09-03-2020
+=======================
+
+
+   * frameworks/base
+95faf00e9a5 SystemUI: Remove BatteryBar background
+22dc732381c SystemUI: Fix NPE on Volume panel plugins
+a8fc99e3912 SystemUI: Fix Brightness slider overlap
+1dcc35c31b3 Clock Styles: Add explosion circle animation clock
+d19a01c1c0c Clock Styles: Add two blue circle animation clocks
+
+   * kernel/xiaomi/ginkgo
+3dd42c507d48 msm: kgsl: Correctly clean up dma buffer attachment in error case
+b19f55d60632 ARM64/configs: Switch to z3fold as zram backend and regen
+88968082fc62 lib/lz4/lz4_decompress.c: document deliberate use of `&'
+413c25a2cfd3 zram: Add compile-time support for choosing default backend
+d5d49c0940a2 zram: use common zpool interface
+c2dfb87010d1 zram: Checkout to branch android-4.14 of kernel/common
+6ce2d7a8e805 zram: remove zlib from the list of recommended algorithms
+cce8c10d1bb2 z3fold: Don't fail on zRAM allocation requests
+c6cf764adcfc z3fold: Add huge_class_size callback to prevent zRAM going nuts
+108e21bd84f6 zsmalloc: add compaction and huge class callbacks
+91e32d8d311b zpool: extend API to match zsmalloc
+37e78748f953 zpool: add malloc_support_movable to zpool_driver
+e56f68f1527f z3fold: Fix up compilation for pre-k5.3
+7f865e6baf22 z3fold: Fast-forward to mainline revision
+8cea7a7d105d zsmalloc: Add compaction callbacks
+70eb30af3bd1 zpool: add compaction api
+b38264c51b5b mm: docs: fix parameter names mismatch
+ac1155ea785b mm/z3fold.c: use gfpflags_allow_blocking
+851dc6e7339c mm/zsmalloc.c: fix build when CONFIG_COMPACTION=n
+8abeb6b3a48a mm/zsmalloc.c: fix race condition in zs_destroy_pool
+ab9f388af71c mm/zsmalloc.c: migration can leave pages in ZS_EMPTY indefinitely
+866f0a91d57e UPSTREAM: lib/test_meminit.c: add bulk alloc/free tests
+857bc6effdf3 UPSTREAM: lib/test_meminit: add a kmem_cache_alloc_bulk() test
+fa9ff03a0006 UPSTREAM: mm: slub: really fix slab walking for init_on_free
+95630143d559 UPSTREAM: mm/slub.c: init_on_free=1 should wipe freelist ptr for bulk allocations
+fefd5f72056a treewide: Use array_size() in sock_kmalloc()
+ae56592c64b9 treewide: Use array_size() in vzalloc_node()
+8b862f7cce51 treewide: Use array_size() in vzalloc()
+5807a5dcbf21 treewide: Use array_size() in vmalloc()
+81bbc93bfc7e treewide: devm_kzalloc() -> devm_kcalloc()
+ab6a6582e808 treewide: devm_kmalloc() -> devm_kmalloc_array()
+02c0745095d5 treewide: kvmalloc() -> kvmalloc_array()
+812e4f33f50d treewide: kzalloc_node() -> kcalloc_node()
+7287f99657e9 treewide: kzalloc() -> kcalloc()
+1f53e6077896 treewide: kmalloc() -> kmalloc_array()
+eda5ce3b8a3c treewide: Use struct_size() for devm_kmalloc() and friends
+e78a9e795b56 treewide: Use struct_size() for vmalloc()-family
+86db77e40b05 treewide: Use struct_size() for kmalloc()-family
+acc8ad5b30f0 UPSTREAM: device: Use overflow helpers for devm_kmalloc()
+5d570b3691f4 BACKPORT: mm: Use overflow helpers in kvmalloc()
+800b37921627 UPSTREAM: mm: Use overflow helpers in kmalloc_array*()
+4105dad61204 UPSTREAM: Convert v4l2 event to struct_size
+e91a0d77d1ce UPSTREAM: Convert virtio_console to struct_size
+387c0d9a77b0 UPSTREAM: include/linux/slab.h: add kmalloc_array_node() and kcalloc_node()
+4862245ecff3 netfilter: xt_[HARD]IDLETIMER: fix sysfs callback function type
+030cd51bfd75 treewide: fix callback function type for ndo_start_xmit
+f942262af844 arm64: crypto: add NEON accelerated XOR implementation
+68184b733950 ANDROID: kbuild: don't select LD_DEAD_CODE_DATA_ELIMINATION with LTO
+31e1d9527ab6 ANDROID: arm64: fix a mismerge in proc.S
+798382b0ec96 UPSTREAM: kcov: fix struct layout for kcov_remote_arg
+bdf0f88a4c20 UPSTREAM: vhost, kcov: collect coverage from vhost_worker
+fbdc2c0bed68 UPSTREAM: usb, kcov: collect coverage from hub_event
+fb48a1a707b9 BACKPORT: kcov: remote coverage support
+91064fceb90f UPSTREAM: kcov: improve CONFIG_ARCH_HAS_KCOV help text
+84f8113b9334 UPSTREAM: kcov: convert kcov.refcount to refcount_t
+217313332f28 UPSTREAM: kcov: no need to check return value of debugfs_create functions
+09a174f7bd05 UPSTREAM: kernel/kcov.c: mark write_comp_data() as notrace
+baab893bbfd9 UPSTREAM: kernel/kcov.c: mark funcs in __sanitizer_cov_trace_pc() as notrace
+286c2ecfeb04 BACKPORT: kcov: test compiler capability in Kconfig and correct dependency
+59fa4a6de142 UPSTREAM: gcc-plugins: fix build condition of SANCOV plugin
+b0dccdf73942 UPSTREAM: kcov: update documentation
+cbcd704f5371 BACKPORT: Makefile: support flag -fsanitizer-coverage=trace-cmp
+7b76d4425fba mm: set S_SWAPFILE on blockdev swap devices
+a4470449d595 BACKPORT: dm bufio: introduce a global cache replacement
+8b0fcb4d32c8 BACKPORT: dm bufio: remove old-style buffer cleanup
+9e13d03baeaa BACKPORT: dm bufio: introduce a global queue
+e378b03e4c37 BACKPORT: dm bufio: refactor adjust_total_allocated
+dafd12384ca9 BACKPORT: dm bufio: call adjust_total_allocated from __link_buffer and __unlink_buffer
+542d96a552b3 BACKPORT: arm64: tags: Preserve tags for addresses translated via TTBR1
+f8e2d6c77e5b UPSTREAM: arm64: memory: Implement __tag_set() as common function
+ee6b6f068f01 UPSTREAM: arm64/mm: fix variable 'tag' set but not used
+2c24b7244df8 UPSTREAM: arm64: avoid clang warning about self-assignment
+29817688e1e0 UPSTREAM: mm: untag user pointers in mmap/munmap/mremap/brk
+72574ee41e39 UPSTREAM: vfio/type1: untag user pointers in vaddr_get_pfn
+c4f0c65436c2 UPSTREAM: media/v4l2-core: untag user pointers in videobuf_dma_contig_user_get
+8c1207c3cfed UPSTREAM: drm/radeon: untag user pointers in radeon_gem_userptr_ioctl
+8a74ae817afa BACKPORT: drm/amdgpu: untag user pointers
+f66da3752011 UPSTREAM: userfaultfd: untag user pointers
+822f3e2f2cc7 UPSTREAM: fs/namespace: untag user pointers in copy_mount_options
+84f9cd8c6d46 UPSTREAM: mm: untag user pointers in get_vaddr_frames
+69d651e16050 UPSTREAM: mm: untag user pointers in mm/gup.c
+2ba6ad5e42c1 BACKPORT: mm: untag user pointers passed to memory syscalls
+dd9e5f768428 BACKPORT: lib: untag user pointers in strn*_user
+c6499b0516df UPSTREAM: arm64: Fix reference to docs for ARM64_TAGGED_ADDR_ABI
+3ee02e67d3a2 UPSTREAM: selftests, arm64: add kernel headers path for tags_test
+6766edb18316 BACKPORT: arm64: Relax Documentation/arm64/tagged-pointers.rst
+a9a484934e3a UPSTREAM: arm64: Define Documentation/arm64/tagged-address-abi.rst
+15de62be76f2 UPSTREAM: arm64: Change the tagged_addr sysctl control semantics to only prevent the opt-in
+003c05f5a7f4 UPSTREAM: arm64: Tighten the PR_{SET, GET}_TAGGED_ADDR_CTRL prctl() unused arguments
+45f945cf64f4 UPSTREAM: selftests, arm64: fix uninitialized symbol in tags_test.c
+4f7342384f9e UPSTREAM: arm64: mm: Really fix sparse warning in untagged_addr()
+8af06a1a7e2b UPSTREAM: selftests, arm64: add a selftest for passing tagged pointers to kernel
+7c6ec39dd73b BACKPORT: arm64: Introduce prctl() options to control the tagged user addresses ABI
+9fa21f7f4d88 UPSTREAM: thread_info: Add update_thread_flag() helpers
+5066a0fca081 UPSTREAM: arm64: untag user pointers in access_ok and __uaccess_mask_ptr
+60bb68e4a233 UPSTREAM: uaccess: add noop untagged_addr definition
+7e6a38c66e69 unicode: update to Unicode 12.1.0 final
+036be73ac37b unicode: add missing check for an error return from utf8lookup()
+3ac849e91c31 unicode: refactor the rule for regenerating utf8data.h
+622835b55b3c unicode: update unicode database unicode version 12.1.0
+ecedf4cf1803 unicode: introduce test module for normalized utf8 implementation
+6af8cc32f74e unicode: implement higher level API for string handling
+37f5545f3f9e unicode: reduce the size of utf8data[]
+03c1a21f0563 unicode: introduce code for UTF-8 normalization
+53f70caac271 unicode: introduce UTF-8 character database
+9d7de369046a UPSTREAM: mm/kasan: fix false positive invalid-free reports with CONFIG_KASAN_SW_TAGS=y
+7bffb26adad4 ANDROID: fiq_debugger: remove
+94ee07a23b81 ANDROID: Add a tracepoint for mapping inode to full path
+bc2cc8bddbed scsi: ufs: disable clock scaling
+fcfd3c3c1d94 mm: skip swap readahead when process is exiting
+5e7694b25e39 UPSTREAM: lib/test_meminit.c: use GFP_ATOMIC in RCU critical section
+c58d8fd83a46 UPSTREAM: mm: slub: Fix slab walking for init_on_free
+55121b62f0be UPSTREAM: lib/test_meminit.c: minor test fixes
+94dc2bf11111 UPSTREAM: lib/test_meminit.c: fix -Wmaybe-uninitialized false positive
+466a81b1ca1d UPSTREAM: lib: introduce test_meminit module
+a47ca764148b UPSTREAM: mm: init: report memory auto-initialization features at boot time
+adeb5141663e BACKPORT: mm: security: introduce init_on_alloc=1 and init_on_free=1 boot options
+69ea2178dc7b BACKPORT: security: Implement Clang's stack initialization
+b2568fd2edea BACKPORT: security: Create "kernel hardening" config area
+4a46aa714ec1 UPSTREAM: arm64: move jump_label_init() before parse_early_param()
+91246f1bfd5d BACKPORT: arch: add pidfd and io_uring syscalls everywhere
+0645a9db6de2 BACKPORT: arch: wire-up pidfd_open()
+ac7fefe49666 UPSTREAM: kasan: initialize tag to 0xff in __kasan_kmalloc
+a59a108d1db3 UPSTREAM: x86/boot: Provide KASAN compatible aliases for string routines
+7477436e16f4 UPSTREAM: mm/kasan: Remove the ULONG_MAX stack trace hackery
+b630d74f90c3 UPSTREAM: x86/uaccess, kasan: Fix KASAN vs SMAP
+ac974199026d UPSTREAM: x86/uaccess: Introduce user_access_{save,restore}()
+262b9768b8b2 UPSTREAM: kasan: fix variable 'tag' set but not used warning
+c266cb81efc5 UPSTREAM: Revert "x86_64: Increase stack size for KASAN_EXTRA"
+cf347aa5eb06 UPSTREAM: kasan: fix coccinelle warnings in kasan_p*_table
+9f9aa0c9c63f UPSTREAM: kasan: fix kasan_check_read/write definitions
+ba95eeb417a1 BACKPORT: kasan: remove use after scope bugs detection.
+372ccdefa868 BACKPORT: kasan: turn off asan-stack for clang-8 and earlier
+51c3d3d60bee UPSTREAM: slub: fix a crash with SLUB_DEBUG + KASAN_SW_TAGS
+16c6d74dd78f UPSTREAM: kasan, slab: remove redundant kasan_slab_alloc hooks
+73414431b2b1 UPSTREAM: kasan, slab: make freelist stored without tags
+ec0a1d46e7aa UPSTREAM: kasan, slab: fix conflicts with CONFIG_HARDENED_USERCOPY
+ce00b31eff72 UPSTREAM: kasan: prevent tracing of tags.c
+8e37fa17a575 UPSTREAM: kasan: fix random seed generation for tag-based mode
+be7332ccbc25 UPSTREAM: slub: fix SLAB_CONSISTENCY_CHECKS + KASAN_SW_TAGS
+fb3ef029ca82 UPSTREAM: kasan, slub: fix more conflicts with CONFIG_SLAB_FREELIST_HARDENED
+183f45d02aa6 UPSTREAM: kasan, slub: fix conflicts with CONFIG_SLAB_FREELIST_HARDENED
+2e5d3b99a156 UPSTREAM: kasan, slub: move kasan_poison_slab hook before page_address
+82e1ccef4f71 UPSTREAM: kasan, kmemleak: pass tagged pointers to kmemleak
+051eea78960a UPSTREAM: kasan: fix assigning tags twice
+235761fe563d UPSTREAM: kasan: mark file common so ftrace doesn't trace it
+d59568143da0 UPSTREAM: kasan, arm64: remove redundant ARCH_SLAB_MINALIGN define
+da9467a3db66 UPSTREAM: kasan: fix krealloc handling for tag-based mode
+35c64ea7e3ac UPSTREAM: kasan: make tag based mode work with CONFIG_HARDENED_USERCOPY
+a11979dee78f UPSTREAM: kasan, arm64: use ARCH_SLAB_MINALIGN instead of manual aligning
+409502bc3d10 BACKPORT: mm/memblock.c: skip kmemleak for kasan_init()
+b94c079ab0c9 UPSTREAM: kasan: add SPDX-License-Identifier mark to source files
+27c7f9a14ba0 BACKPORT: kasan: update documentation
+d842a3d091b9 UPSTREAM: kasan, arm64: select HAVE_ARCH_KASAN_SW_TAGS
+01cff2bd47b0 UPSTREAM: kasan: add __must_check annotations to kasan hooks
+ef0d73103e69 BACKPORT: kasan, mm, arm64: tag non slab memory allocated via pagealloc
+3342c04e19f0 UPSTREAM: kasan, arm64: add brk handler for inline instrumentation
+461d3516fcb8 UPSTREAM: kasan: add hooks implementation for tag-based mode
+7873717a8e34 UPSTREAM: mm: move obj_to_index to include/linux/slab_def.h
+529671eece92 UPSTREAM: kasan: add bug reporting routines for tag-based mode
+9d4bcff636b7 UPSTREAM: kasan: split out generic_report.c from report.c
+77239792c66a UPSTREAM: kasan, mm: perform untagged pointers comparison in krealloc
+abb5712fc82f BACKPORT: kasan, arm64: enable top byte ignore for the kernel
+434239deb3b4 BACKPORT: kasan, arm64: fix up fault handling logic
+fc760083d530 UPSTREAM: kasan: preassign tags to objects with ctors or SLAB_TYPESAFE_BY_RCU
+2ba04122151a UPSTREAM: kasan, arm64: untag address in _virt_addr_is_linear
+058cf514fb80 UPSTREAM: kasan: add tag related helper functions
+6aee246df2ff BACKPORT: arm64: move untagged_addr macro from uaccess.h to memory.h
+8a2d6c0f002c BACKPORT: kasan: initialize shadow to 0xff for tag-based mode
+4b86ecfc7c57 BACKPORT: kasan: rename kasan_zero_page to kasan_early_shadow_page
+41ac8a7b4056 BACKPORT: kasan, arm64: adjust shadow size for tag-based mode
+4dc174bea520 BACKPORT: kasan: add CONFIG_KASAN_GENERIC and CONFIG_KASAN_SW_TAGS
+bd356bcc61c6 UPSTREAM: kasan: rename source files to reflect the new naming scheme
+79de5fdd5ca4 BACKPORT: kasan: move common generic and tag-based code to common.c
+755659d9d00a UPSTREAM: kasan, slub: handle pointer tags in early_kmem_cache_node_alloc
+33325c9b5714 UPSTREAM: kasan, mm: change hooks signatures
+0d9758e99ab3 UPSTREAM: arm64: add EXPORT_SYMBOL_NOKASAN()
+22fb2df122f8 BACKPORT: compiler: remove __no_sanitize_address_or_inline again
+87ece3d2bfdf UPSTREAM: mm/kasan/quarantine.c: make quarantine_lock a raw_spinlock_t
+ced7822c2624 UPSTREAM: lib/test_kasan.c: add tests for several string/memory API functions
+46d3cf4b09af UPSTREAM: compiler: introduce __no_sanitize_address_or_inline
+2d9e24204a09 UPSTREAM: arm64: Fix typo in a comment in arch/arm64/mm/kasan_init.c
+647e52e821c8 BACKPORT: mm/mempool.c: remove unused argument in kasan_unpoison_element() and remove_element()
+84e9ab368c00 UPSTREAM: kasan: only select SLUB_DEBUG with SYSFS=y
+501e3d0bef3a UPSTREAM: kasan: depend on CONFIG_SLUB_DEBUG
+d8c1310ff85f UPSTREAM: KASAN: prohibit KASAN+STRUCTLEAK combination
+7c655c238b4c UPSTREAM: arm64: kasan: avoid pfn_to_nid() before page array is initialized
+ba7cf4911c9c UPSTREAM: kasan: fix invalid-free test crashing the kernel
+15db9dedcb7c UPSTREAM: kasan, slub: fix handling of kasan_slab_free hook
+1ef8cf63143e UPSTREAM: slab, slub: skip unnecessary kasan_cache_shutdown()
+5c60d08d70ba BACKPORT: kasan: make kasan_cache_create() work with 32-bit slab cache sizes
+ef90ba730e99 UPSTREAM: locking/atomics: Instrument cmpxchg_double*()
+395f4052494a UPSTREAM: arm64/mm/kasan: don't use vmemmap_populate() to initialize shadow
+1f2613fa1591 UPSTREAM: locking/atomics: Instrument xchg()
+f3896d7d16e2 UPSTREAM: locking/atomics: Simplify cmpxchg() instrumentation
+1b90726cc8c1 UPSTREAM: locking/atomics/x86: Reduce arch_cmpxchg64*() instrumentation
+7c1d33d613c6 UPSTREAM: locking/atomic, asm-generic, x86: Add comments for atomic instrumentation
+e95f3475cf3d UPSTREAM: locking/atomic, asm-generic: Add KASAN instrumentation to atomic operations
+c0d62fd6d319 UPSTREAM: locking/atomic/x86: Switch atomic.h to use atomic-instrumented.h
+2c3355f0649d UPSTREAM: locking/atomic, asm-generic: Add asm-generic/atomic-instrumented.h
+55316e1cf2dc BACKPORT: kasan, arm64: clean up KASAN_SHADOW_SCALE_SHIFT usage
+56b6cc87eb5a UPSTREAM: kasan: fix prototype author email address
+494cdab6b7d2 UPSTREAM: kasan: add tests for alloca poisoning
+9335b8cdc0b8 UPSTREAM: kasan: support alloca() poisoning
+47d4c1f840c1 BACKPORT: kasan: add compiler support for clang
+3e7b5056dd09 BACKPORT: fs: dcache: Revert "manually unpoison dname after allocation to shut up kasan's reports"
+fddd1db786f8 UPSTREAM: fs/dcache: Use read_word_at_a_time() in dentry_string_cmp()
+41aa2cf35bae UPSTREAM: Documentation/features/KASAN: mark KASAN as supported only on 64-bit on x86
+584c0427a824 mm: brk: downgrade mmap_sem to read when shrinking
+61587c72181e mm: mremap: downgrade mmap_sem to read when shrinking
+15ccf8952fe5 mm: unmap VM_PFNMAP mappings with optimized path
+79f709704467 mm: unmap VM_HUGETLB mappings with optimized path
+c36a5906c2f3 mm: mmap: zap pages with read mmap_sem in munmap
+d0002bf32728 UPSTREAM: kasan: clean up KASAN_SHADOW_SCALE_SHIFT usage
+d47ea6f9e17f ANDROID: fix kernelci build-break
+256f6b2bf2c6 UPSTREAM: pidfd: fix a poll race when setting exit_state
+763af5d8ef77 BACKPORT: pid: add pidfd_open()
+524455a6daff UPSTREAM: pidfd: add polling support
+aab2a9f17d18 UPSTREAM: signal: improve comments
+1e38f2865165 UPSTREAM: fork: do not release lock that wasn't taken
+23fc15c05f1b BACKPORT: signal: support CLONE_PIDFD with pidfd_send_signal
+411a58b5e313 BACKPORT: clone: add CLONE_PIDFD
+21ecbb413f15 UPSTREAM: Make anon_inodes unconditional
+aa2267ff61da UPSTREAM: signal: use fdget() since we don't allow O_PATH
+9519233895bb UPSTREAM: signal: don't silently convert SI_USER signals to non-current pidfd
+4b466ff6f8a7 BACKPORT: signal: add pidfd_send_signal() syscall
+54014bb3e423 BACKPORT: kernel/memremap, kasan: make ZONE_DEVICE with work with KASAN
+1a09748037fc BACKPORT: sched/core / kcov: avoid kcov_area during task switch
+16e3541be840 UPSTREAM: kcov: prefault the kcov_area
+966e2836526b UPSTREAM: kcov: fix comparison callback signature
+bd061cce1c8e BACKPORT: kcov: support comparison operands collection
+5348b2dc7618 UPSTREAM: kcov: remove pointless current != NULL check
+96b10199396b Merge dfd29d00c2785849853c490f6838e71a30674e3e on remote branch
+4566035d18e6 Makefile: Disable compound-token-split-by-space warning
+ab1393510549 ARM64/configs: ginkgo: Disable teo cpuidle governor
+13cd3fc884e2 mmc: sdhci-msm: Only create one pm_qos object for the IRQ
+df688c905679 sched: Disable EAS_PREFER_IDLE
+757a5d6d4b8b sched/fair: Derive the downmigration margin wrt the destination CPU
+78b605547e18 sched/fair: Improve the scheduler
+05862eb18a00 sched/fair: Fix race between runtime distribution and assignment
+1714151e6553 sched/fair: Stop running idle_balance on active migration kick
+0366c6096a07 sched/core: With a grace period after finish_task_switch(), remove unnecessary code
+e047cdb60c75 sched/energy: handle memory allocation failure
+b6bc12589951 BACKPORT: sched/core: Distribute tasks within affinity masks
+a22dac5b925f BACKPORT: sched/fair: Load balance aggressively for SCHED_IDLE CPUs
+e70c8fcdd4b5 BACKPORT: sched/fair: Make sched-idle CPU selection consistent throughout
+3464c3a77da2 BACKPORT: sched/fair: Fall back to sched-idle CPU if idle CPU isn't found
+bdbde9ea3c93 BACKPORT: sched/fair: Use a recently used CPU as an idle candidate and the basis for SIS
+360f6654265e BACKPORT: sched/fair: Start tracking SCHED_IDLE tasks count in cfs_rq
+08fa987cdc46 BACKPORT: sched/fair: reduce no-hz idle balance for energy aware systems
+2764b742b384 sched/core: fix preemption disable tracking during context switch to idle
+fd67882f5c2e sched/core: wake up from idle by sending IPI_WAKEUP
+87dc70de2ac8 sched/fair: Don't allow SchedTune boosted tasks to be migrated to small cores
+b67c554018f0 ARM64/configs: ginkgo: Enable dstune boost and regen
+543d6a6570e6 sysctl: Move wakeup_granularity_ns define under sched_debug
+b71e697ff7a8 sysctl: Dynamically boost schedtune on triggering sched_boost
+e849a76959ca sched/tune: Mark sched_boost_override_(r/w) as __maybe_unused
+0a57b5fc6cec sched/tune: Restore simplified init check
+0327f9001c27 sched/tune: Switch Dynamic Schedtune Boost to a slot-based tracking system
+5006740cc4de sched/stune: Rename stune_boost() to do_stune_sched_boost()
+aded193f0cc4 sched/tune: Rename dynamic_boost parameter to sched_boost
+9f28dd55f78d sched/tune: Track active boosts on a per-Schedtune basis
+78a4d0197cad sched/tune: Reset Dynamic Schedtune Boost only if no more boosts running
+801c12c2e274 sched/tune: Introduce stune_boost() function
+2e4aae5ae65b sched/tune: Refactor do_stune_boost()
+2a9dd596fb37 sched/tune: Create dynamic_boost SchedTune parameter
+969063785436 sched/tune: Rename dynamic_boost_write() to dynamic_boost()
+8e9b7e4ce4d7 sched/tune: Add initial support for Dynamic SchedTune Boost
+0c8798eae4de sched/tune: remove WALT support from stune assist
+006130c81251 sched/tune: Guard SchedTune Assist code properly
+d99243f59093 sched/tune: Lower default stune boost values
+a6bdd42fd38f sched/tune: Don't hardcode top-app stune boost
+00ab97223e1d cpuidle: lpm-levels: Change idle policy to always enter C1 first
+ef2bb6aef07b cpuidle: lpm-levels: Use cpu_do_idle for shallower LPM entry
+cb4f44a735d7 cpuidle: lpm-levels: Add back bias_hyst
+8d0f284f6102 msm_vidc: Remove pm_qos usage
+f9e55fc550a1 Revert "binder: Prevent context manager from incrementing ref 0"
+272e464aa29c ANDROID: ext4: avoid log spams in ext4_umount_end
+5d4356d52e72 qcacld-3.0: Enable adapter monitor mode by default
+a564d656b44d ARM64/configs: ginkgo: Disable QCOM_SHOW_RESUME_IRQ
+c3587278c0cf nt36xxx/ft8719: Send KEY_WAKEUP as well on dt2w event
+8dc4b6a7d40a ARM64/configs: ginkgo: Set optimal cpusets for trinket
+1c9792d621ca cpuset: Refactor cpuset assist code
+340e00fd0a94 exec: Add power@2.0 and IOP to tampering blacklist
+9ba71da0a38a exec: Extend task_is_booster check to cover OxygenOS userspace HALs
+
+=======================
+     09-02-2020
+=======================
+
+
+   * frameworks/base
+dc95ac9f71c Merge pull request #10 from theOverpoweredGuy/screenoff-fod
+818459445d3 fwb: Optimise how plugins are applied
+58b95184917 SystemUI: Improve HeaderImage background
+3f742369869 Revert "BoostFramework: New hintType for App Starting from BG."
+822947df929 Revert "framework: add boost for package installation"
+4ad86364c0e Revert "Perf: Boost UI thread during app launching"
+962f793dcff SystemUI: Fix multiple issues with hiding unprovisioned SIMs
+eb438ddc42f StatusBarSignalPolicy: Hide signal icons for disabled SIMs
+
+   * packages/apps/Settings
+de3f5fab39 Settings: Improve text padding
+
+   * packages/apps/ZenHub
+4ea8f66 Merge pull request #9 from theOverpoweredGuy/screenoff-fod
+
+   * vendor/xiaomi/trinket-common
+e1a04cd trinket-common: Update perf stack from LA.UM.8.11.r1-03800
+20cb5f2 trinket-common: Move all vendor init rc's to device tree
+
+   * vendor/zenx
+b722c60c vendor: Copy files to product properly
+38df11db Merge pull request #2 from Raaj52/ten
+a20ac2e6 build: phony: Enhancement
+6f8ed967 build: Colours makes things vibrant!
+fb404c80 vendor: ZenX-OS 1.9
 
