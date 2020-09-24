@@ -1,35 +1,10 @@
-Device Changelog
-- Added new Screen-Off FOD.
-- Added Fluence Voice recorder (This must fix google recorder).
-- Disabled FOD Icon Dimming.
-- SEpolicy: Label new battery supply and usb supply nodes.
-
-ROM Changelog
-
-- Added list animations and interpolator
-- QS drag handle improvements
-- Added Default lockscreen clock font and text size options
-- Added QS panel visualizer
-- Added RGB Accent picker
-- Added volume panel styles
-- Added option to centre R type notification header
-- Added brightness slider in QQS
-- Allowed navbar to work with hw keys
-- Added screen off animations
-- Added new FOD animations
-- Added new settings home page
-- Added support for MiSound FX
-- Added nav bar styles
-- Added header images
-- Added new volte icon(by @im_monarK)
-- Added brightness bar styles
-- Added option to hide device parts
-- Improve media seekbar
-- Added option to allow home button wake
-- Make unlocking faster via biometric lock
-- Improvements to touch response
-- Decrease Battery drain
-- Many other fixes and improvements
+Changelog
+-> Fixed VoWifi and Native Video calling.
+-> Added back Smart Charging.
+-> Nuked ANXCamera
+-> Added GCamGo Edition
+-> Added StarWars popup sounds
+-> Added more FOD animations
 
 Note : You need to flash the latest vendor version according to your region. Refer below,
 - V12.0.2.0 for India
