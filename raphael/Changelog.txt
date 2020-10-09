@@ -1,10 +1,44 @@
-Changelog
--> Fixed VoWifi and Native Video calling.
--> Added back Smart Charging.
--> Nuked ANXCamera
--> Added GCamGo Edition
--> Added StarWars popup sounds
--> Added more FOD animations
+⚡️ZenX-OS Changelog v1.10⚡️
+
+
+
+🔹Merged October security patch
+
+🔹Added volume panel styles 
+
+🔹Added music text next to volume panel 
+
+🔹Added volume panel location customisation 
+
+🔹Added volume panel media card 
+
+🔹Imported back arrow from oos 
+
+🔹Updated Qs tile icons 
+
+🔹Added configurable nav bar handle thickness
+
+🔹Added AOSPA App locker 
+
+🔹Added OOS QS tyle style 
+
+🔹Added volume icon tints 
+
+🔹Added new FOD pressed icons.
+
+🔹Added support of 3 launchers(pixel,op,lawnnchair) 
+
+🔹Many Other fixes and improvements
+
+Builds will roll out soon....
+
+Stay tuned for more updates :)
+
+
+
+🔹Note: This will the last feature additions release for Android 10 and we will continue to release security patch updates and yeah 
+
+Android 11 is wip
 
 Note : You need to flash the latest vendor version according to your region. Refer below,
 - V12.0.2.0 for India
