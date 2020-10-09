@@ -1,5 +1,19 @@
 =======================
-     10-07-2020
+     10-09-2020
+=======================
+
+
+   * device/xiaomi/ginkgo
+a7d0c03 ginkgo: Update fingerprint from coral october patches
+
+   * device/xiaomi/trinket-common
+329b194 trinket-common: Enable H/W composition
+3486c49 trinket-common: Skip zram configration from post_boot
+fea9d7a trinket-common: Cleanup unused packages
+948fbdc trinket-common: Disable partial FB excl rect
+
+=======================
+     10-08-2020
 =======================
 
 
@@ -8,7 +22,7 @@
 aa81ca8 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/manifest into HEAD
 
 =======================
-     10-06-2020
+     10-07-2020
 =======================
 
 
@@ -19,9 +33,17 @@ d498d82d8 Bump Security String to 2020-10-05
 161f9bbe vendor: Zenx 1.10
 
 =======================
+     10-06-2020
+=======================
+
+
+=======================
      10-05-2020
 =======================
 
+
+   * prebuilts/clang/host/linux-x86/clang-12.0
+dcd31ae Update to 20201003 build
 
 =======================
      10-04-2020
@@ -34,9 +56,6 @@ d498d82d8 Bump Security String to 2020-10-05
    * packages/apps/ZenHub
 9a2da85 Merge pull request #15 from theOverpoweredGuy/fodpressedicons
 
-   * prebuilts/clang/host/linux-x86/clang-12.0
-dcd31ae Update to 20201003 build
-
 =======================
      10-03-2020
 =======================
@@ -44,34 +63,19 @@ dcd31ae Update to 20201003 build
 
    * frameworks/base
 b0890f97fb8 base: Added new FOD pressed state icons [1/2] Icons extracted by Alexandru Scurtu <sasha.scurtu@gmail.com>
-
-   * packages/apps/ZenHub
-972a0a7 ZenHub: Add FOD Pressed state Icons [2/2]
-
-=======================
-     10-02-2020
-=======================
-
-
-   * frameworks/base
 ed0e797e0cf base: nuke font overlays
 517dbce86fd AlarmsBlocker [1/2]
 bf5d60d640b WakelockBlocker [1/2]
 
    * packages/apps/ZenHub
+972a0a7 ZenHub: Add FOD Pressed state Icons [2/2]
 d651052 [SQUASCH] Add Alarm and Wakelock Blocker
-
-   * vendor/xiaomi/ginkgo
-a852bd0 ginkgo: Update blobs from MIUI V12.0.2.0.QCOCNXM
-
-   * vendor/xiaomi/trinket-common
-c2a4e7c trinket-common: Update display/graphics from LA.UM.8.11.r1-04300-NICOBAR.0
 
    * vendor/zenx
 33338d46 vendor: Fonts refactoring
 
 =======================
-     10-01-2020
+     10-02-2020
 =======================
 
 
@@ -91,11 +95,6 @@ f60aabf ginkgo: overlay: Add overlay for device parts in zen hub
 08fc992 ginkgo: Adapt to ZenX-OS
 
    * device/xiaomi/trinket-common
-d81aab5 trinket-common: Enable H/W composition
-584835c trinket-common: Skip zram configration from post_boot
-8e26132 trinket-common: Cleanup unused packages
-c2e0866 trinket-common: Disable partial FB excl rect
-6994663 trinket-common: Enable qti-telephony-common aosp_usr_pref_sel
 e721812 trinket-common: Update display/graphics to LA.UM.8.11.r1-04300-NICOBAR.0
 b3cc39f trinket-common: Update blobs from ginkgo MIUI V12.0.2.0.QCOCNXM
 4ba9d57 trinket-common: Disable OEM unlock toggle
@@ -104,8 +103,20 @@ b3cc39f trinket-common: Update blobs from ginkgo MIUI V12.0.2.0.QCOCNXM
 4555378 trinket-common: Disable config_cleanupUnusedFingerprints
 4ffd5ca trinket-common: Use interaction boost
 
+   * packages/apps/Email
+66c6d3f38 Automatic translation import
+
+   * packages/apps/ExactCalculator
+f23a2c2 Automatic translation import
+
+=======================
+     10-01-2020
+=======================
+
+
    * frameworks/base
 5bae03e64d5 Merge pull request #15 from theOverpoweredGuy/sbheight
+b547cfd0a6f SystemUI: Make header image height offset user configurable [1/2]
 
    * kernel/xiaomi/ginkgo
 e61bbc0556e2 ARM64/configs: ginkgo: Enable USB force fast charge and regen
@@ -115,27 +126,8 @@ a5fa56d59c99 drm/msm/sde: kcal: Force reprocessing upon config change
 cd242db1ad51 drm/msm/sde: Split HSIC application
 cfc41e51e4b4 drm: sde: Drop current KCAL implementation
 
-   * packages/apps/Email
-66c6d3f38 Automatic translation import
-
-   * packages/apps/ExactCalculator
-f23a2c2 Automatic translation import
-
    * packages/apps/ZenHub
 2fce129 Merge pull request #14 from theOverpoweredGuy/sbheight
-
-   * vendor/xiaomi/trinket-common
-c2cd666 trinket-common: Update blobs from ginkgo MIUI V12.0.2.0.QCOCNXM
-
-=======================
-     09-30-2020
-=======================
-
-
-   * frameworks/base
-b547cfd0a6f SystemUI: Make header image height offset user configurable [1/2]
-
-   * packages/apps/ZenHub
 5773b0f ZenHub: Make header image height configurable [2/2]
 
    * prebuilts/clang/host/linux-x86/clang-12.0
@@ -144,6 +136,20 @@ c20752f Restore LLVM license
 
    * vendor/oplauncher
 2bd2e6b Merge pull request #2 from theOverpoweredGuy/android_10
+
+   * vendor/xiaomi/ginkgo
+c6d3c4c ginkgo: Update blobs from MIUI V12.0.2.0.QCOCNXM
+
+   * vendor/xiaomi/trinket-common
+4d6385c trinket-common: Update display/graphics from LA.UM.8.11.r1-04300-NICOBAR.0
+f1e484a trinket-common: Update blobs from ginkgo MIUI V12.0.2.0.QCOCNXM
+
+=======================
+     09-30-2020
+=======================
+
+
+   * vendor/oplauncher
 718496e OPLauncher: Add Launcher3 into overriding list
 
 =======================
@@ -163,6 +169,9 @@ d9ca8e018 backuptool: do not unmap dynamic partition after finished
    * packages/apps/ZenHub
 69398a3 zenhub:Add new device(davinci)
 
+   * vendor/lawnchair
+eaf0b38 Don't include quickstep when building lawnchair
+
 =======================
      09-27-2020
 =======================
@@ -173,20 +182,56 @@ de2442d2c sign_target_apks: Replace update-payload-key.pub.pem in RECOVERY as we
 1a4e53613 build_image: Allow disabling custom inode count calculation
 f73d06d6c Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/build into HEAD
 
+   * build/soong
+7ac70711 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/build/soong into HEAD
+
+   * development
+a78e4bf32 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/development into HEAD
+
    * frameworks/base
 b9ddeebe744 Merge pull request #14 from theOverpoweredGuy/fodanims
 ca851db93bc base: Add Realme recognizing FP animations [1/2]
 3495335c0a5 base: Add Vivo Endless FOD animation [1/2]
 ddfba13335c base: Add ASUS ROG FOD animations [1/2]
 3c35bd3134c base: Add MIUI Neon FOD animation [1/2]
+0c310adc75a SystemUI: Block face authentication when device is in pocket mode
+3c7d0300e67 Make all activities resizable
+9294b0172e2 Fix list style alert dialog to use system font
+3a81ec84239 Apply theme by using notification context
+09624a4f943 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/frameworks/base into HEAD
+
+   * frameworks/opt/net/wifi
+c0cf5676d HDM: Resolve concurrent access issue - defer execution
+6cb0538a4 [HDM] Fix concurrency failure
+d50291833 wifi_hal: add slsi wifi hal support
+321185c0d Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD
+
+   * hardware/zenx/interfaces
+85880aa gnss-legacy: Bring back Beidou
+8feefe7 gnss-legacy: Bring back GLONASS
+00e7fbd gnss: Rename to legacy
+899ab00 interfaces: Import GNSS 1.0 HAL from hardware/interfaces
+
+   * packages/apps/Bluetooth
+381beb0e Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD
+
+   * packages/apps/Settings
+9238e95a76 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
 
    * packages/apps/ZenHub
 211c1ff Merge pull request #13 from theOverpoweredGuy/fodanims
 b841168 Merge pull request #11 from spkal01/ten
 fafe31b [SQUASH] ZenHub: Added New FOD animations.
 
-   * vendor/lawnchair
-eaf0b38 Don't include quickstep when building lawnchair
+   * packages/providers/MediaProvider
+2d82858 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD
+
+   * system/bt
+99073fded Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/system/bt into HEAD
+
+   * system/core
+1a7a3264b libcutils: change trace file error to verbose
+c8613e7fe fs_mgr: Allow remounts with Magisk installed
 
    * vendor/oplauncher
 8411b8b Updated Weather App to v2.7.1
@@ -194,15 +239,22 @@ eaf0b38 Don't include quickstep when building lawnchair
 4f50856 Use TARGET_COPY_OUT_PRODUCT
 be4bb52 OP Launcher: Create Condition for OP widgets & apps
 
-   * vendor/xiaomi/ginkgo
-03ffa88 ginkgo: Update blobs from MIUI 20.9.16
-
-   * vendor/xiaomi/trinket-common
-959083b trinket-common: Update blobs from ginkgo MIUI 20.9.16
-
    * vendor/zenx
 c3ad529c Merge pull request #5 from Raaj52/ten
 9048a696 Merge pull request #4 from spkal01/ten
+280bfa58 vendor: ZenX-OS 1.9 (with sec patch)
+1a333183 vendor: Move custom buildinfo to vendor/zenx [2/2]
+89969f80 extract_utils: Add support for system_ext
+428f39ed kernel: Use CPATH for including host headers
+14139056 vendor: kernel: Add back support for custom dtboimg makefile
+066dcd78 kernel: Add support for mkdtimg cfg_create
+83cc3041 kernel: Switch to mkdtboimg.py
+4bd27f36 kernel: Rework how DTB/DTBO are built
+c575af08 vendor: apns-conf: Add Hits APN
+4cc6ac37 overlay: Remove voicemail number configs
+37f27815 Revert "overlay: Enable Visual Voicemail for Verizon devices"
+56555940 vendor: Drop verity tool
+3e766346 kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg
 
 =======================
      09-26-2020
@@ -215,21 +267,10 @@ c3ad529c Merge pull request #5 from Raaj52/ten
    * bootable/recovery
 33d1ee1d Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/bootable/recovery into HEAD
 
-   * build/soong
-7ac70711 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/build/soong into HEAD
-
-   * development
-a78e4bf32 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/development into HEAD
-
    * frameworks/av
 22392d045 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/frameworks/av into HEAD
 
    * frameworks/base
-0c310adc75a SystemUI: Block face authentication when device is in pocket mode
-3c7d0300e67 Make all activities resizable
-9294b0172e2 Fix list style alert dialog to use system font
-3a81ec84239 Apply theme by using notification context
-09624a4f943 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/frameworks/base into HEAD
 6d9b891ded2 SystemUI: Add Volume icons tint
 c4c385b5e82 SystemUI: Improve QuickBrightnessPanel
 6f0122389bc TwilightService: Fix typo
@@ -251,26 +292,14 @@ d4c52ce6b72 DO NOT MERGE: Verify INSTALL_PACKAGES permissions when adding instal
    * frameworks/native
 557e7b31f Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/frameworks/native into HEAD
 
-   * frameworks/opt/net/wifi
-c0cf5676d HDM: Resolve concurrent access issue - defer execution
-6cb0538a4 [HDM] Fix concurrency failure
-d50291833 wifi_hal: add slsi wifi hal support
-321185c0d Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD
-
    * frameworks/opt/telephony
 6cbec2260 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD
 
    * hardware/interfaces
 6b7ebe558 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/hardware/interfaces into HEAD
 
-   * hardware/zenx/interfaces
-85880aa gnss-legacy: Bring back Beidou
-8feefe7 gnss-legacy: Bring back GLONASS
-00e7fbd gnss: Rename to legacy
-899ab00 interfaces: Import GNSS 1.0 HAL from hardware/interfaces
-
-   * packages/apps/Bluetooth
-381beb0e Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD
+   * kernel/xiaomi/ginkgo
+834c7073b16e Merge tag 'v4.14.199' into quartz
 
    * packages/apps/CertInstaller
 4edb440 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/CertInstaller into HEAD
@@ -288,16 +317,16 @@ c8515fff9 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/pla
 6e78151b Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD
 
    * packages/apps/Settings
-9238e95a76 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
+2d870ecd0f Enable the filterTouchesWhenObscured in Special app access
 
    * packages/apps/SettingsIntelligence
 7a33c75 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD
 
+   * packages/apps/ZenHub
+620da8e Revert "ZenHub: make aspect ratio hack configable on app level [2/2]"
+
    * packages/providers/DownloadProvider
 82c603f2 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD
-
-   * packages/providers/MediaProvider
-2d82858 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD
 
    * packages/services/Telephony
 9d47f6874 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
@@ -308,12 +337,7 @@ c8515fff9 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/pla
    * system/bpf
 094104a Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/system/bpf into HEAD
 
-   * system/bt
-99073fded Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/system/bt into HEAD
-
    * system/core
-1a7a3264b libcutils: change trace file error to verbose
-c8613e7fe fs_mgr: Allow remounts with Magisk installed
 ffd7e53d5 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/system/core into HEAD
 
    * system/extras
@@ -327,149 +351,4 @@ ffd7e53d5 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/pla
 
    * system/vold
 fb0b232 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/system/vold into HEAD
-
-   * vendor/zenx
-280bfa58 vendor: ZenX-OS 1.9 (with sec patch)
-1a333183 vendor: Move custom buildinfo to vendor/zenx [2/2]
-89969f80 extract_utils: Add support for system_ext
-428f39ed kernel: Use CPATH for including host headers
-14139056 vendor: kernel: Add back support for custom dtboimg makefile
-066dcd78 kernel: Add support for mkdtimg cfg_create
-83cc3041 kernel: Switch to mkdtboimg.py
-4bd27f36 kernel: Rework how DTB/DTBO are built
-c575af08 vendor: apns-conf: Add Hits APN
-4cc6ac37 overlay: Remove voicemail number configs
-37f27815 Revert "overlay: Enable Visual Voicemail for Verizon devices"
-56555940 vendor: Drop verity tool
-3e766346 kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg
-
-=======================
-     09-25-2020
-=======================
-
-
-   * device/qcom/sepolicy-legacy-um
-c910c0d8 sepolicy: Remove mediacodec_service
-
-   * device/zenx/sepolicy
-73e34ca selinux: Introduce Applock [3/3]
-cb3686a common: Remove mediacodec_service related rules
-4e1bf85 common: allow getting and setting theme.prop
-
-   * frameworks/av
-358943d04 Finer synchronization for nuplayer stats
-48e09725e Allow graceful degradation of MediaProfile with broken configuration.
-0104afd68 audio: support set volume for app [1/2]
-56d638edd AudioFlinger: fix fast capture silence
-045fd3a01 Delete an uninitialized object in AACExtractor
-d7d17b35f clearkey hidl: fix oob read in decrypt
-9984b163c JAudioTrack: fix bitwise evaluation
-
-   * frameworks/base
-28b137d60e4 Revert "base: make aspect ratio hack configable on app level [1/2]"
-cdb8bcf5d22 fixup - base: do not use new lockscreen layout for bypass
-a12c7947b7b PocketLock: fix flickering on animations
-b55d1b17d0c Revert "PocketLock: Remove animations"
-b40fce2cf30 Improve face unlock behavior on devices with popup camera
-1b5328e43af PackageManagerService: Protect forced enabled components at runtime
-9b63c8a1de2 PackageInstaller: Fix crash when uninstalling apps with fragile data
-c40329b5984 Skip screen on animation when wake and unlock via biometrics
-f50c3c1fbbe  Add OOS QS Tile Style [1/3]
-ef31b340569 SystemUI: BiometricDialogView: Fix missing package manager member
-34b24012c67 base: Introduce Applock [1/2]
-8e5236493bf BiometricService: Avoid null pointer exception
-eac81cd41a9 SystemUI: Hide non-system overlays when biometric prompt is showing
-5422be454f2 SystemUI: BiometricPrompt: Call onDialogAnimatedIn when we are showing the dialog without animation
-4b1e886c52a SystemUI: BiometricPrompt: Adjust layout if FOD is present
-5701efb7a39 base: Use 2 modalities concurrently in BiometricPrompt if available
-2a3ce1b1933 fwb: allow changing navbar handle thickness [1/2]
-f86eda35c48 SystemUI: fix NPE on global actions dialog
-5d3eddad921 Fix CDM.requestNotificationAccess() in profile.
-c5c9ce3fbf7 Added policy based firewall in the security tab.
-eed4ccdaaf3 base: Update QS tile icons
-2c1a34a78a4 SystemUI: Fix QS tile layout w.r.t detail view expand button
-702c0fccadf core: Import back arrow from OOS
-52b057b2d99 [BugFix][Fingerprint]fix client was canceled by service by mistake
-37d6682b712 SystemUI: make QS security footer color consistent with the panel
-899837dc63d SystemUI: Make header image height offset user configurable [1/2]
-
-   * frameworks/native
-7d272347d Revert "touch response optimizations"
-145c2aa2e binder: fix inconsistent-missing-override warning
-2e832fd11 Remove heap allocations from Parcel::enforceInterface
-1f3a1e43a Enable context virtualization only for GL
-688ff8789 Flush BC_FREE_BUFFER and ref ops from non-looper threads
-04f7383b7 binder: Bp: clear DRs in onLastStrongRef
-f10ff4a70 libs: Fix FD comparisons in binder
-8ac289ad0 touch response optimizations
-b01970262 Call Layer::getLayerDebugInfo from the main thread
-ac9259412 Copy Screenshot to fd if and only if user consent approved
-
-   * kernel/xiaomi/ginkgo
-834c7073b16e Merge tag 'v4.14.199' into quartz
-
-   * packages/apps/Settings
-2d870ecd0f Enable the filterTouchesWhenObscured in Special app access
-9f62f1871f Settings: Fix NPE in SliceHalfCardRendererHelper
-8e7e244fd3 Remove useless png and add vector drawable
-63aef34682 Remove "storage type" preference from Settings
-f16f284f07 Settings: Account more 5G network modes
-ae158d67f5 Add NR network type to "Global" mode preference
-bc4294ebd3 Prevent overlay drawing on top of Bluetooth discovery request dialog
-fe3ffb61f5 Prevent overlay drawing on top of Bluetooth pairing dialog
-
-   * packages/apps/ZenHub
-620da8e Revert "ZenHub: make aspect ratio hack configable on app level [2/2]"
-
-   * system/core
-bfb865a6c libutils: check vsnprintf error
-46723988f String16::remove - avoid overflow
-ea5a5d546 Boost init priority before main loop
-6c0bea66f Allow to drop existing fd cache of cgroup path
-
-   * system/sepolicy
-a2918621 sepolicy: fix neverallows
-40c96c59 Fix theme prop sepolicy denial
-
-=======================
-     09-24-2020
-=======================
-
-
-   * hardware/qcom-caf/sm8150/audio
-e189b950 hal: Add missing includes
-3b950066 audio_extn: Allow skipping compilation of audio HAL extensions
-1a9500c2 audio: Skip libhdmipassthru on OSS builds
-b8e636d8 audio: Use direct    * pathmap
-
-   * hardware/qcom-caf/sm8150/display
-26bfac8b gralloc: Fix RAW10/12 buffer alignment for trinket
-8d196016 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
-b1d07c0d Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
-5cf3d8dc Don't build lights module if vendor supplies it
-7175738f display: Use    * pathmap
-c04f6348 Add 'display-commonsys-intf/' from tag 'LA.UM.8.11.r1-04300-NICOBAR.0'
-
-   * hardware/qcom-caf/sm8150/media
-4dd91792 media: libOmxSw encoders require prop headers :(
-2e63f2b4 media: Exclude libplatformconfig from OSS builds
-2b492595 media: Depend on display_headers not display_intf_headers
-5355afd8 media: Use    * pathmap
-
-   * kernel/xiaomi/ginkgo
-f6e1fddb1812 ARM64/configs: ginkgo: Disable unused modules
-c7a6a9e68f5b qpnp-power-on/dts: Revert power button software debouncing changes
-b2d09e45b82e sysctl: Move sched_latency_ns under SCHED_DEBUG
-1dfa9b6d55e4 sched/fair: Reduce latency
-54f9c3d9dd37 rmnet_shs: Fix CFI violation in packet assignment
-f6732512ae28 rmnet_perf: Fix CFI violation in packet deaggregation
-af6f1d8e11a0 cpufreq/schedutil: Disable iowait boost when battery saver is active
-9fb271fefa2d sched/tune: Disable boost & prefer_idle if battery saver is active
-cd38183d5117 kernel/sysctl: Do not boost stune if battery saver is active
-e169f35a39a4 devfreq_boost: Do not boost if battery saver is active
-2d49793e30d2 cpu_input_boost: Pin min_freq to lowest when battery saver is on
-f99bb95af703 drivers/misc: Introduce kernelspace battery saver mode
-6833ee8293d4 Revert "sched: Disable EAS_PREFER_IDLE"
-3784feda8bd9 boeffla_wl_blocker: Block qup_uart BT wakelock
-e4528f20497e build.sh: Update
 
