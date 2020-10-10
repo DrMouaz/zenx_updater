@@ -1,109 +1,196 @@
 =======================
-     09-03-2020
+     10-09-2020
+=======================
+
+
+=======================
+     10-08-2020
+=======================
+
+
+=======================
+     10-07-2020
+=======================
+
+
+   * manifest
+1934061 manifest: Track external/sonivox from los
+
+=======================
+     10-06-2020
+=======================
+
+
+   * build/make
+d498d82 Bump Security String to 2020-10-05
+
+   * vendor/zenx
+161f9bb vendor: Zenx 1.10
+
+=======================
+     10-05-2020
+=======================
+
+
+=======================
+     10-04-2020
+=======================
+
+
+=======================
+     10-03-2020
 =======================
 
 
    * frameworks/base
-95faf00e SystemUI: Remove BatteryBar background
-
-=======================
-     09-02-2020
-=======================
-
-
-   * packages/apps/OmniStyle
-481a4e4 Omnistyle: Compress images
-
-   * packages/apps/Settings
-de3f5fa Settings: Improve text padding
+95533a74 Merge pull request #16 from theOverpoweredGuy/fodpressedicons
 
    * packages/apps/ZenHub
-4ea8f66 Merge pull request #9 from theOverpoweredGuy/screenoff-fod
-
-   * vendor/zenx
-b722c60 vendor: Copy files to product properly
+9a2da85 Merge pull request #15 from theOverpoweredGuy/fodpressedicons
 
 =======================
-     09-01-2020
-=======================
-
-
-   * frameworks/opt/telephony
-2e146c1 TelephonyExtUtils: Handle extphone binder death
-
-   * manifest
-b624243 manifest:Track chromium-webview from los
-
-=======================
-     08-31-2020
-=======================
-
-
-   * packages/apps/CustomDoze
-8bf2850 Merge pull request #1 from theOverpoweredGuy/screenoff-fod
-
-   * packages/apps/Plugins
-565ff4f plugins: adapt to work with our UI styler
-
-   * packages/apps/TouchGestures
-7951d60 Merge pull request #2 from theOverpoweredGuy/screenoff-fod
-
-=======================
-     08-30-2020
+     10-02-2020
 =======================
 
 
 =======================
-     08-29-2020
+     10-01-2020
 =======================
 
 
-   * device/lenovo/jd2019
-68f0e6e jd2019: add some dafault overlays and enable dt2w gestures
+   * hardware/qcom-caf/msm8916/display
+2facb06 Gralloc: Validate buffer parameters during importBuffer call
+
+   * packages/apps/Email
+66c6d3f Automatic translation import
+
+   * packages/apps/ExactCalculator
+f23a2c2 Automatic translation import
 
 =======================
-     08-28-2020
+     09-30-2020
 =======================
 
 
-   * system/sepolicy
-8613098 sepolicy: allow reading theme prop
+   * vendor/lawnchair
+c4f4059 Merge pull request #1 from theOverpoweredGuy/ten
+
+   * vendor/oplauncher
+2bd2e6b Merge pull request #2 from theOverpoweredGuy/android_10
 
 =======================
-     08-27-2020
+     09-29-2020
 =======================
 
+
+=======================
+     09-28-2020
+=======================
+
+
+   * hardware/qcom-caf/msm8974/display
+d5ea072 copybit: Export c2d header
+
+   * hardware/qcom-caf/msm8974/media
+0ac6d80 libc2dcolorconvert: Remove dependency on stagefright
+
+=======================
+     09-27-2020
+=======================
+
+
+   * hardware/qcom-caf/sm8150/audio
+6a9c3b0 audio_amplifier: Add new hook for setting amp feedback
+
+=======================
+     09-26-2020
+=======================
+
+
+   * bionic
+87f255f Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/bionic into HEAD
+
+   * bootable/recovery
+33d1ee1 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/bootable/recovery into HEAD
+
+   * build/soong
+7ac7071 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/build/soong into HEAD
+
+   * development
+a78e4bf Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/development into HEAD
+
+   * frameworks/av
+22392d0 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/frameworks/av into HEAD
 
    * frameworks/native
-30a9699 touch response optimizations
+557e7b3 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/frameworks/native into HEAD
 
-=======================
-     08-26-2020
-=======================
+   * frameworks/opt/net/wifi
+c0cf567 HDM: Resolve concurrent access issue - defer execution
 
+   * frameworks/opt/telephony
+6cbec22 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/frameworks/opt/telephony into HEAD
 
-=======================
-     08-25-2020
-=======================
+   * hardware/interfaces
+6b7ebe5 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/hardware/interfaces into HEAD
 
+   * hardware/zenx/interfaces
+85880aa gnss-legacy: Bring back Beidou
 
-=======================
-     08-24-2020
-=======================
+   * packages/apps/Bluetooth
+381beb0 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD
 
+   * packages/apps/CertInstaller
+4edb440 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/CertInstaller into HEAD
 
-=======================
-     08-23-2020
-=======================
+   * packages/apps/DocumentsUI
+c8515ff Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/DocumentsUI into HEAD
 
+   * packages/apps/Messaging
+2dd89f6 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/Messaging into HEAD
 
-=======================
-     08-22-2020
-=======================
+   * packages/apps/Nfc
+14c40d1 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD
 
+   * packages/apps/PackageInstaller
+6e78151 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into HEAD
 
-=======================
-     08-21-2020
-=======================
+   * packages/apps/Settings
+9238e95 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
 
+   * packages/apps/SettingsIntelligence
+7a33c75 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/apps/SettingsIntelligence into HEAD
+
+   * packages/providers/DownloadProvider
+82c603f Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD
+
+   * packages/providers/MediaProvider
+2d82858 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD
+
+   * packages/services/Telephony
+9d47f68 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD
+
+   * platform_testing
+116fd92 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/platform_testing into HEAD
+
+   * system/bpf
+094104a Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/system/bpf into HEAD
+
+   * system/bt
+99073fd Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/system/bt into HEAD
+
+   * system/core
+1a7a326 libcutils: change trace file error to verbose
+
+   * system/extras
+1f75bcb Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/system/extras into HEAD
+
+   * system/sepolicy
+18dae19 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/system/sepolicy into HEAD
+
+   * system/update_engine
+1862e1c Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/system/update_engine into HEAD
+
+   * system/vold
+fb0b232 Merge tag 'android-10.0.0_r46' of https://android.googlesource.com/platform/system/vold into HEAD
 
