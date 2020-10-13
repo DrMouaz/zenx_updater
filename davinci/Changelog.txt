@@ -1,0 +1,45 @@
+Source changelog
+
+⚡️ZenX-OS Changelog v1.10⚡️
+
+🔹Merged October security patch
+🔹Added volume panel styles 
+🔹Added music text next to volume panel 
+🔹Added volume panel location customisation 
+🔹Added volume panel media card 
+🔹Imported back arrow from oos 
+🔹Updated Qs tile icons 
+🔹Added configurable nav bar handle thickness
+🔹Added AOSPA App locker 
+🔹Added OOS QS tyle style 
+🔹Added volume icon tints 
+🔹Added new FOD animations 
+🔹Added support of 3 launchers(pixel,op,lawnnchair) 
+🔹Many Other fixes and improvements
+Builds will roll out soon....
+Stay tuned for more updates :)
+
+🔹Note: This will the last feature additions release for Android 10 and we will continue to release security patch updates  and yeah 
+Android 11 is wip
+
+Device changelog
+
+Initial official build 
+Removed yt vannced
+Added gcam latest urnyx
+more pixel 4 a stuff that aim for better battery and performance
+Upstreamed Vantom
+Fix android auto
+Increase doze brightness
+Make decisions whether to choose 5 ghz or 2.4 ghz network smarter 
+Clean up
+Add some graphic related props
+Added librac_layer_sgl that fixes front cam crash on anx 190
+Enable fluence on audio and voice recording
+Fixed battery overlays
+Wifi disable.logging
+More powerhint changes
+Import google changes on dEC7 Volume
+Led changes in order for new Vantom and new arian to work 
+Fixed battery overlay
+More bugs to fix :D
