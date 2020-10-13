@@ -1,298 +1,140 @@
 =======================
-     09-03-2020
+     10-13-2020
 =======================
 
 
    * frameworks/base
-ab49558 Revert "StatusBarSignalPolicy: Hide signal icons for disabled SIMs"
-ed4268c Revert "SystemUI: Fix multiple issues with hiding unprovisioned SIMs"
-95faf00 SystemUI: Remove BatteryBar background
-22dc732 SystemUI: Fix NPE on Volume panel plugins
-a8fc99e SystemUI: Fix Brightness slider overlap
-1dcc35c Clock Styles: Add explosion circle animation clock
-d19a01c Clock Styles: Add two blue circle animation clocks
-
-   * packages/apps/OmniStyle
-ff7983a OmniStyle: Add CustomHeader by GMLR
-56af442 OmnyStyle: add hentai header pack
-a3b0ef1 OmniStyle: Added More Naruto Headers
-481a4e4 Omnistyle: Compress images
-
-   * packages/apps/ZenHub
-9ea66a8 Revert "ZenHub: Nuke Oreo Volume Panel"
-
-=======================
-     09-02-2020
-=======================
-
-
-   * frameworks/base
-dc95ac9 Merge pull request #10 from theOverpoweredGuy/screenoff-fod
-8184594 fwb: Optimise how plugins are applied
-58b9518 SystemUI: Improve HeaderImage background
-
-   * packages/apps/Settings
-de3f5fa Settings: Improve text padding
-
-   * packages/apps/ZenHub
-4ea8f66 Merge pull request #9 from theOverpoweredGuy/screenoff-fod
+ba8c9a26aa9 Revert "StatusBarSignalPolicy: Hide signal icons for disabled SIMs"
+d60fb029bf3 Revert "SystemUI: Fix multiple issues with hiding unprovisioned SIMs"
 
    * vendor/zenx
-b722c60 vendor: Copy files to product properly
-38df11d Merge pull request #2 from Raaj52/ten
-a20ac2e build: phony: Enhancement
-6f8ed96 build: Colours makes things vibrant!
-fb404c8 vendor: ZenX-OS 1.9
+f615ae03 Revert "kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg"
+7c1a2b4a Revert "kernel: Rework how DTB/DTBO are built"
+6d6e008e Revert "kernel: Switch to mkdtboimg.py"
+22cdb9e4 Revert "kernel: Add support for mkdtimg cfg_create"
+ac40eb92 Revert "vendor: kernel: Add back support for custom dtboimg makefile"
+df8036c4 Revert "kernel: Use CPATH for including host headers"
 
 =======================
-     09-01-2020
+     10-12-2020
 =======================
 
 
-   * frameworks/base
-3f74236 Revert "BoostFramework: New hintType for App Starting from BG."
-822947d Revert "framework: add boost for package installation"
-4ad8636 Revert "Perf: Boost UI thread during app launching"
-962f793 SystemUI: Fix multiple issues with hiding unprovisioned SIMs
-eb438dd StatusBarSignalPolicy: Hide signal icons for disabled SIMs
+=======================
+     10-11-2020
+=======================
+
+
+=======================
+     10-10-2020
+=======================
+
+
+=======================
+     10-09-2020
+=======================
+
+
+=======================
+     10-08-2020
+=======================
+
 
    * manifest
-b624243 manifest:Track chromium-webview from los
-
-   * packages/apps/OmniStyle
-9b8c767 OmniStyle:Add marvel and DC superohero headers
-880bb58 Revert "OmniStyle: Add itsaalex poison headers"
-a427ca1 Revert "OmniStyle: Add 'Space' headers"
-0027a47 Revert "OmniStyle: Add 'Colorful' headers"
-f22d169 Bring Animeness to the world of Custom Roms (#1)
-1aa983d Omnistyle: Add more scenery headers
-f3dd62b OmniStyle: Added SAO headers
-83b170f OmniStyle: Add scenery headers
-c2575e8 OmniStyle: Add Naruto Headers
-
-   * packages/apps/ZenHub
-28bf935 ZenHub: Allow hiding Device Parts from ZenHub [1/2]
+1934061 manifest: Track external/sonivox from los
+aa81ca8 Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/manifest into HEAD
 
 =======================
-     08-31-2020
+     10-07-2020
 =======================
 
 
-   * frameworks/base
-1997aea PackageInstaller: Fix crash when uninstalling apps with fragile data
-a6f1038 Skip screen on animation when wake and unlock via biometrics
-f91fcb6 Navbar: Introduce navbar styles [1/3]
-ac1755e base: Q seekbar: Tweak it's size
-da89421 Revert "base: media_seekbar: make it sexy"
-ad77a6b base: Introduce awesome brightness slider style [1/3]
-48560cf SystemUI:Add new v(O)lte icon[1/2] *@Lokesh773:Bringup to ZenX-OS *Icon by @yashdevelops
-a0982b4 base: Allow hiding Device Parts from ZenHub [1/2]
-64d0446 Quick Brightness Slider: Fix padding issues
-dafa246 SystemUI: adapt to work with our UI styler
-e0eb588 base: Separate vibrate drawable for vol panel from common icon
-635932ee Notification: Fix no icon shown for data limit notification
-e2d00aa ChooserActivity: fix android crash from null object
-af82271 services: LightsService: Mute an annoying error message.
-97926e9 webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
-43e0403 Gracefully handle integer overflows.
-5c24069 Taskhelper api: fix NPE
-20de8f6 Refactor killapp implementation into a Dependency controller class
-dc058d6 base: Add overlay to Enable/Disable Home button wake
-cc2264d base: Enable home button wake
-e998808 [SQUASH] base: Cleanup for new screen off fod implementation
-f4fee0a fwb: Add screen off fod [1/2]
-
-   * packages/apps/CustomDoze
-8bf2850 Merge pull request #1 from theOverpoweredGuy/screenoff-fod
-
-   * packages/apps/Plugins
-565ff4f plugins: adapt to work with our UI styler
-
-   * packages/apps/Settings
-dabf585 Merge pull request #3 from theOverpoweredGuy/screenoff-fod
-
-   * packages/apps/TouchGestures
-7951d60 Merge pull request #2 from theOverpoweredGuy/screenoff-fod
-
-   * packages/apps/ZenHub
-6fb9d92 ZenHub: Introduce navbar styles [2/3]
-d6a6c0e ZenHub:Add new v(O)lte icon[2/2]
-28ac74c ZenHub: Introduce awesome brightness slider style picker [3/3]
-d3e551d Revert "Revert "QSPanel Visualizer [2/2]""
+   * build/make
+d498d82d8 Bump Security String to 2020-10-05
 
    * vendor/zenx
-1cb2125 Navbar: Introduce navbar styles [3/3]
-1d4595f vendor: Introduce awesome brightness slider style [2/3]
-f3c01a1 vendor: apns-conf: Drop proxy for Movistar
-7ad369b repopick: Address PEP8 warnings regarding indentations and variable naming
-8bb8d0d repopick: Use empty metavar parameter to fix help's indentation
-3cc9a88 kernel: Bail-out if kernel config isn't set
-27d5b04 kernel: Add support for module aliases
-3750070 kernel: Allow installing modules on vendor_overlay
-a778323 repopick: Use upstream instead of revision to determine branch
+161f9bbe vendor: Zenx 1.10
 
 =======================
-     08-30-2020
+     10-06-2020
 =======================
 
 
-   * frameworks/opt/telephony
-5637408 Failed to show hold call when user click swap and merge simultaneously
+=======================
+     10-05-2020
+=======================
+
+
+=======================
+     10-04-2020
+=======================
+
+
+   * frameworks/base
+95533a748c0 Merge pull request #16 from theOverpoweredGuy/fodpressedicons
 
    * packages/apps/ZenHub
-8684759 [SQUASH] ZenHub: Clean-Up for new Screen off FOD implementation
+9a2da85 Merge pull request #15 from theOverpoweredGuy/fodpressedicons
 
 =======================
-     08-29-2020
+     10-03-2020
 =======================
 
 
-   * packages/apps/CustomDoze
-0ca0b57 Revert "CustomDoze: Don't pulse if Screen Off FOD is enabled"
-
-   * packages/apps/Settings
-6771ebe Settings: Screen-Off FOD [2/2]
-1ad1e1f Revert "Settings: Screen off FOD [2/3]"
-
-   * packages/apps/TouchGestures
-836b63d Revert "TouchGestures: Don't pulse if Screen Off FOD is enabled"
+   * frameworks/base
+b0890f97fb8 base: Added new FOD pressed state icons [1/2] Icons extracted by Alexandru Scurtu <sasha.scurtu@gmail.com>
+ed0e797e0cf base: nuke font overlays
 
    * packages/apps/ZenHub
-1f2d2a4 Revert "Revert "QSPanel Visualizer [2/2]""
-47ff71b ZenHub: Nuke Oreo Volume Panel
-
-   * system/sepolicy
-8613098 sepolicy: allow reading theme prop
+972a0a7 ZenHub: Add FOD Pressed state Icons [2/2]
+d651052 [SQUASCH] Add Alarm and Wakelock Blocker
 
 =======================
-     08-28-2020
+     10-02-2020
 =======================
 
 
    * frameworks/base
-86b19cb base: Separate vibrate drawable for vol panel from common icon
+517dbce86fd AlarmsBlocker [1/2]
+bf5d60d640b WakelockBlocker [1/2]
+
+   * hardware/qcom-caf/msm8916/display
+2facb060e Gralloc: Validate buffer parameters during importBuffer call
+
+   * packages/apps/Email
+66c6d3f38 Automatic translation import
+
+   * packages/apps/ExactCalculator
+f23a2c2 Automatic translation import
+
+   * vendor/zenx
+33338d46 vendor: Fonts refactoring
 
 =======================
-     08-27-2020
-=======================
-
-
-   * frameworks/base
-4abd2cf Notification: Fix no icon shown for data limit notification
-fad0cea ChooserActivity: fix android crash from null object
-e202ea2 services: LightsService: Mute an annoying error message.
-d13732f webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
-7f26e7d Gracefully handle integer overflows.
-6b42378 Taskhelper api: fix NPE
-3899fd1 Refactor killapp implementation into a Dependency controller class
-1ac3812 base: Add overlay to Enable/Disable Home button wake
-d5a8edd base: Enable home button wake
-7c90358 VolumeDialog: notifyVisible after the volume panel is fully hidden
-010941c VolumeDialog: display default row when active row is notification
-2c5d1d5 SystemUI: fix size of icon of vibrate ringer mode
-de4fa6c fixup - SystemUI: Allow device to override audio panel location
-f8b1a2e Add isFaceAuthEnabledForUser checks in KeyguardLiftController
-af4dbae PocketJudge: allow register vendor pocket sensor
-541df69 SystemUI: Block face authentication when device is in pocket mode
-9eced9a avoid duplicate doFrame calls.
-28d79c1 make ui touch optimization work normally.
-b4c54dd add VSYNC scheduled flag and avoid two doFrame calls in one period
-91ff87e core: touch response optimizations
-461adfb Revert "ScreenDecorations: Account notch-city for custom cutout"
-8144e21 base: Add support for MiSound FX
-0d6eeea base: Add DiracSound and MiSound to current api
-6b202ee SystemUI: Fix QS tiles clipping when too many icons in view
-5fefad9 SystemUI: fix qs footer divider width and header image height
-
-   * frameworks/native
-30a9699 touch response optimizations
-66c0291 gui: Fix array out of bound
-a8ffa93 binder: Parcel avoid too small initial allocation
-8964557 gl: Reorder when ImageManager thread starts
-
-=======================
-     08-26-2020
+     10-01-2020
 =======================
 
 
    * frameworks/base
-26847f9 SystemUI: keep width on qs expand move
-bd58a2e SystemUI: decrease margin between qs and text
-55ede5d Fix a race conditon in `incident`.
-82e7e75 SystemUI: use OnePlus drawables for autobrightness icon
-77c146c BrightnessSlider: Correct the slider thumb
-ec0e2c4 base: SystemUI: fix brightness slider animation
-9cc1515 QSBHeader: code clean-up n improvements
-ca40c4f Fixup QSPanel Mess
-3e54b9a Brightness slider: Visual improvements
-d471afe SystemUI: Don't re add brightness slider if its already present
-1336777 base: SystemUI: fix moving of qs brightness slider
-ed92261 QSPanel: fix brightness slider logic
-0e4c82d base: SystemUI: Kill brightness mirror
-3e35194 SystemUI: extend quick qs slider position [1/3]
-0d62340 SystemUI: Add brightness buttons to quick qs brightness slider
-7c35d67 SystemUI: QQS brightness: get container padding directly
-d5e5c07 Implement quick QS brightness slider [1/3]
-890cc97 base: Fix another SystemUI crash
-b8fa548 base: Remove Duplicate FOD animations [1/2]
-f851e2b base: VolumePluginManager: Add default constructor
-35d9a98 base: Allow using plugins even on production
-0890ad4 base: Implement VolumePluginManager
-4f56c07 base: Add Mi 10 Ultra FOD animations [1/2]
-73d062b Show the nearby chip for images and files too.
-85af551 Allow navbar to work with hw keys
-589ec05 RGB Accenter: Listen for more accent colors
-3df1fba System UI: Restore correct Padding for qs Header
-daaf832 Add option to center "R style" notification headers [1/2]
+5bae03e64d5 Merge pull request #15 from theOverpoweredGuy/sbheight
+b547cfd0a6f SystemUI: Make header image height offset user configurable [1/2]
 
    * packages/apps/ZenHub
-a644f56 ZenHub: Implement quick QS brightness slider [2/2]
-0bc9830 ZenHub: Remove duplicate FOD animations [2/2]
-40fe8d4 ZenHub: Don't translate Volume Panel Values
-1da8c1b ZenHub: Make all accent color presets 8 char long
-d01e7ac ZenHub: POSP Vol panel styles
-905516c ZenHub: Add RGB accent presets
-b1c725a Revert "QSPanel Visualizer [2/2]"
-1a79a99 ZenHub: Add Mi 10 Ultra FOD animations [2/2]
-5c2f77f ZenHub: Allow to keep hw keys enabled [2/2]
-b942dc1 Add option to center "R style" notification headers [2/2]
-acc599f ZenHub:Update Maintainers and Devices
-33c3da7 Merge pull request #6 from Gasiyu/patch-1
-039a92a ZenHub: Add RGB Accent Picker
-817b027 QSPanel Visualizer [2/2]
+2fce129 Merge pull request #14 from theOverpoweredGuy/sbheight
 
 =======================
-     08-25-2020
+     09-30-2020
 =======================
 
 
-=======================
-     08-24-2020
-=======================
+   * packages/apps/ZenHub
+5773b0f ZenHub: Make header image height configurable [2/2]
 
+   * vendor/lawnchair
+c4f4059 Merge pull request #1 from theOverpoweredGuy/ten
+9969115 Lawnchair: Add Launcher3 into overriding list.
 
-=======================
-     08-23-2020
-=======================
-
-
-   * packages/apps/Settings
-e3e1ab0 Settings: update lottie animations
-f824fb0 Settings: update some lottie animations
-94091e8 Settings: add icons for privacy settings
-8ea4bfd Settings: Add new face settings video
-9b30be3 Settings: Make Homepage great again - OOS Homepage
-
-=======================
-     08-22-2020
-=======================
-
-
-=======================
-     08-21-2020
-=======================
-
-
-   * frameworks/base
-bab0b9f RGB Accenter: add more attrs for color changes
+   * vendor/oplauncher
+2bd2e6b Merge pull request #2 from theOverpoweredGuy/android_10
+718496e OPLauncher: Add Launcher3 into overriding list
 
