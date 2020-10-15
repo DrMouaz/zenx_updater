@@ -1,7 +1,16 @@
 =======================
-     08-09-2020
+     13-10-2020
 =======================
-
+Device side changes: 
+-Enforcing build
+-Add AOSP RCS packages
+-Remove dead RCS packages
+-Enable some UX optimizations
+-Disable EGL buffer_age extension support
+-Dont't build tinymix
+-vndk: update from marlin
+-vndk Remove libz from the vndk-sp list
+-init Use sunfish fingerprints
 
 =======================
      08-08-2020
