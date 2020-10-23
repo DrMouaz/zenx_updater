@@ -1,6 +1,12 @@
 =======================
      13-10-2020
 =======================
+Device side changes:- 
+- Updated to coral fingerprint (Fixes safety net)
+- Kernel optimizations 
+=======================
+     13-10-2020
+=======================
 Device side changes: 
 -Enforcing build
 -Add AOSP RCS packages
